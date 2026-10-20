@@ -1,0 +1,459 @@
+{
+ "calidad": {
+  "clientes": 600,
+  "productos": 20,
+  "pedidos": 800,
+  "consultas": 1500,
+  "pedidos_sin_cliente_valido": 0,
+  "pedidos_sin_producto_valido": 0,
+  "totales_que_no_cuadran": 0,
+  "nombres_repetidos_distinto_telefono": 286,
+  "telefonos_duplicados": 0
+ },
+ "kpis": {
+  "ventas_netas": 166890.35,
+  "margen_bruto": 104376.35,
+  "margen_pct": 62.5,
+  "pedidos_validos": 704,
+  "ticket_promedio": 237.06,
+  "clientes_compradores": 400,
+  "tasa_cancelacion_pct": 8.5,
+  "tasa_devolucion_pct": 3.5,
+  "otif_pct": 42.9,
+  "error_grabado_pct": 5.4,
+  "ventas_perdidas": 22753.15,
+  "dias_produccion_prom": 5.6,
+  "descuento_otorgado": 8177.65
+ },
+ "mensual": [
+  {
+   "mes": "2025-10",
+   "ventas": 7873.05,
+   "pedidos": 29,
+   "margen": 5045.05,
+   "otif": 37.9
+  },
+  {
+   "mes": "2025-11",
+   "ventas": 8644.7,
+   "pedidos": 37,
+   "margen": 5333.7,
+   "otif": 29.7
+  },
+  {
+   "mes": "2025-12",
+   "ventas": 24906.0,
+   "pedidos": 103,
+   "margen": 15551.0,
+   "otif": 43.7
+  },
+  {
+   "mes": "2026-01",
+   "ventas": 10164.55,
+   "pedidos": 41,
+   "margen": 6435.55,
+   "otif": 41.5
+  },
+  {
+   "mes": "2026-02",
+   "ventas": 18876.65,
+   "pedidos": 77,
+   "margen": 11900.65,
+   "otif": 46.8
+  },
+  {
+   "mes": "2026-03",
+   "ventas": 12648.55,
+   "pedidos": 52,
+   "margen": 7859.55,
+   "otif": 51.9
+  },
+  {
+   "mes": "2026-04",
+   "ventas": 12020.55,
+   "pedidos": 53,
+   "margen": 7590.55,
+   "otif": 47.2
+  },
+  {
+   "mes": "2026-05",
+   "ventas": 25862.4,
+   "pedidos": 112,
+   "margen": 16143.4,
+   "otif": 42.9
+  },
+  {
+   "mes": "2026-06",
+   "ventas": 9841.7,
+   "pedidos": 45,
+   "margen": 6215.7,
+   "otif": 44.4
+  },
+  {
+   "mes": "2026-07",
+   "ventas": 15058.6,
+   "pedidos": 61,
+   "margen": 9368.6,
+   "otif": 36.1
+  },
+  {
+   "mes": "2026-08",
+   "ventas": 13094.8,
+   "pedidos": 59,
+   "margen": 8118.8,
+   "otif": 39.0
+  },
+  {
+   "mes": "2026-09",
+   "ventas": 7898.8,
+   "pedidos": 35,
+   "margen": 4813.8,
+   "otif": 48.5
+  }
+ ],
+ "por_producto": [
+  {
+   "producto": "Collar mamá con nombres de hijos",
+   "ventas": 22253.6,
+   "unidades": 84,
+   "margen": 13286.6
+  },
+  {
+   "producto": "Collar con nombre",
+   "ventas": 19893.15,
+   "unidades": 96,
+   "margen": 12720.15
+  },
+  {
+   "producto": "Anillos de pareja (par)",
+   "ventas": 19077.25,
+   "unidades": 62,
+   "margen": 11953.25
+  },
+  {
+   "producto": "Medalla de bautizo",
+   "ventas": 18415.5,
+   "unidades": 86,
+   "margen": 11535.5
+  },
+  {
+   "producto": "Dije de huellita",
+   "ventas": 18152.25,
+   "unidades": 93,
+   "margen": 11804.25
+  },
+  {
+   "producto": "Collar con inicial",
+   "ventas": 16836.65,
+   "unidades": 100,
+   "margen": 10764.65
+  },
+  {
+   "producto": "Anillo grabado",
+   "ventas": 14821.65,
+   "unidades": 80,
+   "margen": 8831.65
+  },
+  {
+   "producto": "Pulsera con fecha",
+   "ventas": 13592.85,
+   "unidades": 81,
+   "margen": 8684.85
+  },
+  {
+   "producto": "Pulsera con iniciales",
+   "ventas": 12193.6,
+   "unidades": 76,
+   "margen": 7557.6
+  },
+  {
+   "producto": "Aretes personalizados",
+   "ventas": 11653.85,
+   "unidades": 79,
+   "margen": 7237.85
+  }
+ ],
+ "por_material": [
+  {
+   "material": "Baño oro 18K",
+   "ventas": 91194.9,
+   "margen": 57983.9,
+   "margen_pct": 63.6
+  },
+  {
+   "material": "Plata 925",
+   "ventas": 75695.45,
+   "margen": 46392.45,
+   "margen_pct": 61.3
+  }
+ ],
+ "por_canal_venta": {
+  "Instagram": 58049.25,
+  "WhatsApp": 52101.2,
+  "Web": 23357.35,
+  "Tienda": 19296.8,
+  "TikTok": 14085.75
+ },
+ "motivos": {
+  "Cumpleaños": 23039.35,
+  "Regalo para mí": 21606.0,
+  "Navidad": 21455.2,
+  "Día de la Madre": 21024.0,
+  "Aniversario": 20917.35,
+  "San Valentín": 19799.5,
+  "Nacimiento": 19759.4,
+  "Graduación": 19289.55
+ },
+ "pago": {
+  "Yape": 331,
+  "Tarjeta": 159,
+  "Transferencia": 110,
+  "Plin": 104
+ },
+ "causa": {
+  "devolucion_con_error_pct": 4.7,
+  "devolucion_sin_error_pct": 3.4,
+  "cancelacion_con_error_pct": 4.7,
+  "cancelacion_sin_error_pct": 8.7,
+  "otif_por_dias_produccion": {
+   "2": 100.0,
+   "3": 100.0,
+   "4": 81.8,
+   "5": 46.3,
+   "6": 21.1,
+   "7": 0.0,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "13": 0.0
+  },
+  "pedidos_por_dias_produccion": {
+   "2": 94,
+   "3": 90,
+   "4": 66,
+   "5": 95,
+   "6": 90,
+   "7": 78,
+   "8": 75,
+   "9": 100,
+   "10": 7,
+   "11": 5,
+   "13": 2
+  },
+  "envio_dias_prom": 2.5,
+  "entregas_tarde": 401,
+  "retraso_prom_dias": 3.1,
+  "con_fecha_especial": 265,
+  "llegaron_despues_fecha_especial": 28,
+  "error_por_texto": {
+   "12.03.2019": 8.6,
+   "Eterno": 7.8,
+   "Luna": 6.4,
+   "Mamá": 5.6,
+   "Valeria": 5.2,
+   "A.L.": 4.8,
+   "M & J": 4.1,
+   "Siempre juntos": 3.4,
+   "Thiago": 3.3
+  }
+ },
+ "embudo": {
+  "consultas": 1500,
+  "convertidas": 573,
+  "conversion_pct": 38.2,
+  "mediana_min_respuesta": 45.0,
+  "por_canal": [
+   {
+    "canal": "Instagram",
+    "consultas": 505,
+    "conversion": 39.0,
+    "resp_mediana": 45.0
+   },
+   {
+    "canal": "WhatsApp",
+    "consultas": 497,
+    "conversion": 38.0,
+    "resp_mediana": 45.0
+   },
+   {
+    "canal": "Web",
+    "consultas": 226,
+    "conversion": 40.3,
+    "resp_mediana": 45.0
+   },
+   {
+    "canal": "Tienda",
+    "consultas": 168,
+    "conversion": 35.1,
+    "resp_mediana": 45.0
+   },
+   {
+    "canal": "TikTok",
+    "consultas": 104,
+    "conversion": 35.6,
+    "resp_mediana": 45.0
+   }
+  ],
+  "por_tipo": [
+   {
+    "tipo_consulta": "Precio",
+    "consultas": 589,
+    "conversion": 37.4
+   },
+   {
+    "tipo_consulta": "Personalización",
+    "consultas": 386,
+    "conversion": 39.4
+   },
+   {
+    "tipo_consulta": "Tiempo de entrega",
+    "consultas": 279,
+    "conversion": 35.8
+   },
+   {
+    "tipo_consulta": "Estado de pedido",
+    "consultas": 177,
+    "conversion": 39.5
+   },
+   {
+    "tipo_consulta": "Reclamo",
+    "consultas": 69,
+    "conversion": 44.9
+   }
+  ],
+  "por_tiempo_respuesta": [
+   {
+    "tramo_resp": "≤15 min",
+    "consultas": 510,
+    "conversion": 37.3
+   },
+   {
+    "tramo_resp": "16–60 min",
+    "consultas": 498,
+    "conversion": 37.3
+   },
+   {
+    "tramo_resp": "1–4 h",
+    "consultas": 331,
+    "conversion": 40.5
+   },
+   {
+    "tramo_resp": "> 4 h",
+    "consultas": 161,
+    "conversion": 39.1
+   }
+  ],
+  "consultas_sin_respuesta_1h_pct": 32.8
+ },
+ "segmentos": [
+  {
+   "segmento": "Leales",
+   "clientes": 118,
+   "monto": 62120.15,
+   "frecuencia": 2.19,
+   "pct_ventas": 37.2
+  },
+  {
+   "segmento": "Campeones",
+   "clientes": 48,
+   "monto": 36812.9,
+   "frecuencia": 3.31,
+   "pct_ventas": 22.1
+  },
+  {
+   "segmento": "En riesgo",
+   "clientes": 53,
+   "monto": 28866.4,
+   "frecuencia": 1.98,
+   "pct_ventas": 17.3
+  },
+  {
+   "segmento": "Dormidos",
+   "clientes": 101,
+   "monto": 21243.85,
+   "frecuencia": 1.0,
+   "pct_ventas": 12.7
+  },
+  {
+   "segmento": "Nuevos",
+   "clientes": 80,
+   "monto": 17847.05,
+   "frecuencia": 1.0,
+   "pct_ventas": 10.7
+  },
+  {
+   "segmento": "Prospecto (sin compra)",
+   "clientes": 200,
+   "monto": 0.0,
+   "frecuencia": 0.0,
+   "pct_ventas": 0.0
+  }
+ ],
+ "recompra": {
+  "clientes_con_2mas_pct": 50.7,
+  "ventas_de_recurrentes_pct": 72.2,
+  "registrados_sin_compra": 200
+ },
+ "origen": [
+  {
+   "canal_origen": "Instagram",
+   "clientes": 210,
+   "compradores": 145,
+   "monto": 58992.1,
+   "valor_por_cliente": 280.91
+  },
+  {
+   "canal_origen": "Tienda",
+   "clientes": 68,
+   "compradores": 46,
+   "monto": 19793.95,
+   "valor_por_cliente": 291.09
+  },
+  {
+   "canal_origen": "TikTok",
+   "clientes": 47,
+   "compradores": 30,
+   "monto": 14810.1,
+   "valor_por_cliente": 315.11
+  },
+  {
+   "canal_origen": "Web",
+   "clientes": 96,
+   "compradores": 63,
+   "monto": 26544.25,
+   "valor_por_cliente": 276.5
+  },
+  {
+   "canal_origen": "WhatsApp",
+   "clientes": 179,
+   "compradores": 116,
+   "monto": 46749.95,
+   "valor_por_cliente": 261.17
+  }
+ ],
+ "abiertos": [
+  {
+   "id_pedido": "PED0295",
+   "id_cliente": "C0047",
+   "producto": "Collar con inicial",
+   "fecha_pedido": "2026-09-18",
+   "fecha_prometida": "2026-09-25",
+   "dias_produccion": "9",
+   "fecha_especial": NaN
+  },
+  {
+   "id_pedido": "PED0244",
+   "id_cliente": "C0079",
+   "producto": "Anillo grabado",
+   "fecha_pedido": "2026-09-20",
+   "fecha_prometida": "2026-09-27",
+   "dias_produccion": "9",
+   "fecha_especial": NaN
+  }
+ ],
+ "periodo": [
+  "2025-10-11",
+  "2026-09-22"
+ ]
+}

@@ -1,0 +1,184 @@
+{
+  "name": "Joyería · Nuevo pedido: validar grabado y confirmar con el cliente",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "nuevo-pedido",
+        "options": {}
+      },
+      "name": "Webhook nuevo pedido",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "webhookId": "nuevo-pedido"
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// Las fechas grabadas (DD.MM.AAAA) tienen la mayor tasa de error (8.6 %).\nconst p = $json.body ?? $json;\nconst t = String(p.texto_grabado ?? '').trim();\nconst problemas = [];\nif (!t) problemas.push('texto vacío');\nif (t.length > 20) problemas.push(`texto de ${t.length} caracteres (máx. 20)`);\nif (/[^A-Za-zÁÉÍÓÚáéíóúÑñÜü0-9 .&'\\-]/.test(t)) problemas.push('caracteres no grabables');\nconst f = t.match(/^(\\d{2})\\.(\\d{2})\\.(\\d{4})$/);\nif (f) {\n  const d = new Date(+f[3], +f[2]-1, +f[1]);\n  if (d.getDate() !== +f[1] || d.getMonth() !== +f[2]-1) problemas.push('fecha inexistente');\n}\n// Promesa realista = producción estándar del producto + envío (en lugar de 7 días fijos)\nconst PROD = { default: 6 }, ENVIO = 3;\nconst dias = (PROD[p.id_producto] ?? PROD.default) + ENVIO;\nconst prom = new Date(Date.now() + dias * 86400000).toISOString().slice(0,10);\nconst especial = p.fecha_especial ? new Date(p.fecha_especial) : null;\nconst alerta_especial = especial && new Date(prom) > especial;\nreturn [{ json: { ...p, texto_grabado: t, problemas, ok: problemas.length === 0,\n                  fecha_prometida: prom, alerta_especial } }];\n"
+      },
+      "name": "Validar texto y calcular promesa",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.ok }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "name": "¿Texto válido?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        440,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.facebook.com/v20.0/TU_PHONE_NUMBER_ID/messages",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ messaging_product: 'whatsapp', to: $json.telefono, type: 'text', text: { body: `Hola ${$json.nombre} 💛 Antes de grabar, confirma tu texto: \"${$json.texto_grabado}\". Tu joya llegará a más tardar el ${$json.fecha_prometida}. Responde SÍ para pasar a taller.` } }) }}",
+        "options": {}
+      },
+      "name": "Pedir confirmación al cliente",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        -100
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "TU_GOOGLE_SHEET_ID"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "name",
+          "value": "Pedidos"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {}
+        },
+        "options": {}
+      },
+      "name": "Registrar en CRM",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        880,
+        -100
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.facebook.com/v20.0/TU_PHONE_NUMBER_ID/messages",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ messaging_product: 'whatsapp', to: '51900000000', type: 'text', text: { body: `✋ Pedido de ${$json.nombre}: ${$json.problemas.join(', ')}. Corregir antes de producción.` } }) }}",
+        "options": {}
+      },
+      "name": "Alertar a ventas: corregir texto",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        100
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook nuevo pedido": {
+      "main": [
+        [
+          {
+            "node": "Validar texto y calcular promesa",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validar texto y calcular promesa": {
+      "main": [
+        [
+          {
+            "node": "¿Texto válido?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "¿Texto válido?": {
+      "main": [
+        [
+          {
+            "node": "Pedir confirmación al cliente",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Alertar a ventas: corregir texto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pedir confirmación al cliente": {
+      "main": [
+        [
+          {
+            "node": "Registrar en CRM",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Lima"
+  }
+}

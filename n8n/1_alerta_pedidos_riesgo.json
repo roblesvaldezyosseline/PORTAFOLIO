@@ -1,0 +1,139 @@
+{
+  "name": "Joyería · Alerta diaria de pedidos en riesgo",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "name": "Cada día 08:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "TU_GOOGLE_SHEET_ID"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "name",
+          "value": "Pedidos"
+        },
+        "options": {}
+      },
+      "name": "Leer Pedidos",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        220,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// Envío promedio histórico: 2.5 días (ver analisis_joyeria.py). Se usa 3 como colchón.\nconst ENVIO = 3;\nconst hoy = new Date(); hoy.setHours(0,0,0,0);\nconst dia = 86400000;\nconst out = [];\nfor (const { json: p } of $input.all()) {\n  if (p.estado !== 'En producción') continue;\n  const ped = new Date(p.fecha_pedido), prom = new Date(p.fecha_prometida);\n  const finProd = new Date(ped.getTime() + Number(p.dias_produccion) * dia);\n  const llegadaEst = new Date(Math.max(finProd, hoy) + ENVIO * dia);\n  const holgura = Math.round((prom - llegadaEst) / dia);\n  const especial = p.fecha_especial ? new Date(p.fecha_especial) : null;\n  const pierdeFecha = especial && llegadaEst > especial;\n  if (holgura < 0 || pierdeFecha) {\n    out.push({ json: {\n      id_pedido: p.id_pedido, cliente: p.id_cliente, producto: p.producto,\n      prometida: p.fecha_prometida, llegada_estimada: llegadaEst.toISOString().slice(0,10),\n      dias_retraso: Math.max(0, -holgura), pierde_fecha_especial: !!pierdeFecha,\n      prioridad: pierdeFecha ? 'ALTA' : (holgura < -2 ? 'MEDIA' : 'BAJA') } });\n  }\n}\nout.sort((a,b) => (a.json.prioridad > b.json.prioridad ? 1 : -1));\nreturn out.length ? [{ json: { total: out.length, pedidos: out.map(o => o.json) } }] : [];\n"
+      },
+      "name": "Calcular riesgo de entrega",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "\nconst { total, pedidos } = $json;\nconst lineas = pedidos.map(p =>\n  `• ${p.prioridad} | ${p.id_pedido} ${p.producto} – llega ${p.llegada_estimada} (+${p.dias_retraso} d)` +\n  (p.pierde_fecha_especial ? ' ⚠ después de la fecha especial' : ''));\nreturn [{ json: { texto: `🚨 ${total} pedido(s) en riesgo hoy\\n` + lineas.join('\\n') +\n  `\\n\\nAcción: priorizar en taller o avisar al cliente antes de que pregunte.` } }];\n"
+      },
+      "name": "Armar mensaje",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        660,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.facebook.com/v20.0/TU_PHONE_NUMBER_ID/messages",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ messaging_product: 'whatsapp', to: '51900000000', type: 'text', text: { body: $json.texto } }) }}",
+        "options": {}
+      },
+      "name": "Avisar a Operaciones (WhatsApp)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        880,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Cada día 08:00": {
+      "main": [
+        [
+          {
+            "node": "Leer Pedidos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Leer Pedidos": {
+      "main": [
+        [
+          {
+            "node": "Calcular riesgo de entrega",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calcular riesgo de entrega": {
+      "main": [
+        [
+          {
+            "node": "Armar mensaje",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Armar mensaje": {
+      "main": [
+        [
+          {
+            "node": "Avisar a Operaciones (WhatsApp)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Lima"
+  }
+}

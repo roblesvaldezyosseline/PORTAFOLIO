@@ -1,0 +1,161 @@
+{
+  "name": "Joyería · Campaña de recompra por fecha especial",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 10
+            }
+          ]
+        }
+      },
+      "name": "Cada día 10:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "TU_GOOGLE_SHEET_ID"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "name",
+          "value": "CRM"
+        },
+        "options": {}
+      },
+      "name": "Leer CRM clientes",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        220,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// Clientes cuya fecha especial (cumpleaños, aniversario…) vuelve a cumplirse en 21 días.\nconst ANTICIPO = 21, hoy = new Date(); hoy.setHours(0,0,0,0);\nconst objetivo = new Date(hoy.getTime() + ANTICIPO * 86400000);\nconst md = d => `${d.getMonth()}-${d.getDate()}`;\nreturn $input.all().filter(({ json: c }) => {\n  if (!c.ultima_fecha_especial || !c.telefono) return false;\n  return md(new Date(c.ultima_fecha_especial)) === md(objetivo);\n}).map(({ json: c }) => ({ json: { ...c,\n  mensaje: `Hola ${c.nombre.split(' ')[0]} ✨ En 3 semanas se cumple un año de esa fecha especial. ` +\n           `¿Le sumamos un dije o una pulsera grabada? Pedido hoy = llega a tiempo. Responde y te asesoramos.` } }));\n"
+      },
+      "name": "Filtrar fechas en 21 días",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.facebook.com/v20.0/TU_PHONE_NUMBER_ID/messages",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ messaging_product: 'whatsapp', to: $json.telefono.replace(/\\D/g,''), type: 'text', text: { body: $json.mensaje } }) }}",
+        "options": {}
+      },
+      "name": "Enviar mensaje personalizado",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "TU_GOOGLE_SHEET_ID"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "name",
+          "value": "CRM"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id_cliente": "={{ $('Filtrar fechas en 21 días').item.json.id_cliente }}",
+            "ultimo_contacto": "={{ $now.toISODate() }}",
+            "campana": "fecha_especial"
+          },
+          "matchingColumns": [
+            "id_cliente"
+          ]
+        },
+        "options": {}
+      },
+      "name": "Marcar contacto en CRM",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        880,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Cada día 10:00": {
+      "main": [
+        [
+          {
+            "node": "Leer CRM clientes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Leer CRM clientes": {
+      "main": [
+        [
+          {
+            "node": "Filtrar fechas en 21 días",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filtrar fechas en 21 días": {
+      "main": [
+        [
+          {
+            "node": "Enviar mensaje personalizado",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enviar mensaje personalizado": {
+      "main": [
+        [
+          {
+            "node": "Marcar contacto en CRM",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Lima"
+  }
+}

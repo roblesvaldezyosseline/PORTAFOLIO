@@ -1,0 +1,601 @@
+﻿id_cliente,nombre,telefono,distrito,canal_origen,fecha_registro,frecuencia,monto,recencia_dias,R,F,M,segmento,ultima_fecha_especial
+C0001,Kevin Mendoza,+51 965423511,Lince,Instagram,2026-03-26,1,179.1,181.0,2.0,1.0,1.0,Dormidos,2026-04-08
+C0002,Luis Vargas,+51 907816184,Piura,WhatsApp,2026-04-04,1,212.4,154.0,2.0,1.0,2.0,Dormidos,2026-05-27
+C0003,José Ramírez,+51 910341316,San Borja,WhatsApp,2026-04-05,2,328.15,159.0,2.0,2.0,2.0,Leales,2026-05-11
+C0004,Daniela Huamán,+51 953419283,Surco,WhatsApp,2026-02-16,2,413.25,215.0,2.0,2.0,3.0,Leales,
+C0005,Jorge Castillo,+51 950305641,La Molina,Tienda,2026-07-18,0,0.0,,,,,Prospecto (sin compra),
+C0006,Bruno Gutiérrez,+51 937672423,Arequipa,WhatsApp,2026-02-12,2,343.15,200.0,2.0,2.0,2.0,Leales,
+C0007,Miguel Paredes,+51 996532871,Trujillo,Instagram,2025-11-26,2,500.35,285.0,1.0,2.0,3.0,En riesgo,2025-12-21
+C0008,Mariana Mendoza,+51 969166978,San Borja,TikTok,2025-10-06,0,0.0,,,,,Prospecto (sin compra),
+C0009,Renzo García,+51 984514627,Miraflores,TikTok,2026-02-12,3,681.0,207.0,2.0,3.0,4.0,Leales,2026-03-19
+C0010,Diego Mendoza,+51 981489325,Trujillo,Instagram,2026-06-29,0,0.0,,,,,Prospecto (sin compra),
+C0011,Valeria Gutiérrez,+51 970154303,Los Olivos,TikTok,2025-11-13,0,0.0,,,,,Prospecto (sin compra),
+C0012,Miguel Vega,+51 918227824,San Miguel,Tienda,2026-05-05,0,0.0,,,,,Prospecto (sin compra),
+C0013,Fernanda Ramírez,+51 946578713,La Molina,Instagram,2025-10-11,0,0.0,,,,,Prospecto (sin compra),
+C0014,José Castillo,+51 993010310,Piura,Instagram,2026-06-21,1,398.0,93.0,3.0,1.0,3.0,Nuevos,2026-07-12
+C0015,Andrea Vargas,+51 973829973,Trujillo,WhatsApp,2026-04-27,1,448.0,124.0,3.0,1.0,3.0,Nuevos,
+C0016,Fernanda García,+51 916566701,Miraflores,WhatsApp,2026-03-23,1,156.6,160.0,2.0,1.0,1.0,Dormidos,
+C0017,Kevin García,+51 933387262,San Borja,WhatsApp,2025-11-08,1,299.0,296.0,1.0,1.0,2.0,Dormidos,
+C0018,Rosa García,+51 908013267,Magdalena,Instagram,2026-04-24,0,0.0,,,,,Prospecto (sin compra),
+C0019,Camila Mendoza,+51 960647468,Callao,Web,2025-12-19,0,0.0,,,,,Prospecto (sin compra),
+C0020,Fernanda Chávez,+51 930980500,Los Olivos,WhatsApp,2026-06-29,0,0.0,,,,,Prospecto (sin compra),2026-08-07
+C0021,Daniela Flores,+51 981219136,San Isidro,TikTok,2026-07-19,2,318.0,45.0,4.0,2.0,2.0,Leales,2026-08-31
+C0022,Andrea Flores,+51 991699854,La Molina,Web,2026-03-10,2,424.1,181.0,2.0,2.0,3.0,Leales,
+C0023,Andrea Vargas,+51 962475107,Los Olivos,TikTok,2025-11-21,0,0.0,,,,,Prospecto (sin compra),
+C0024,Lucía Ramírez,+51 984251354,Surco,WhatsApp,2026-07-06,1,169.15,71.0,4.0,1.0,1.0,Nuevos,2026-01-19
+C0025,Bruno Chávez,+51 998084124,San Isidro,Tienda,2026-07-11,1,199.0,74.0,4.0,1.0,1.0,Nuevos,
+C0026,Mariana Vargas,+51 949353487,San Borja,Tienda,2025-10-27,0,0.0,,,,,Prospecto (sin compra),
+C0027,Lucía Paredes,+51 940052427,San Miguel,Web,2026-07-15,3,659.0,49.0,4.0,3.0,4.0,Campeones,
+C0028,Valeria García,+51 912805982,Lince,Instagram,2026-03-07,0,0.0,,,,,Prospecto (sin compra),
+C0029,Natalia Flores,+51 953315869,Arequipa,Instagram,2026-01-30,0,0.0,,,,,Prospecto (sin compra),
+C0030,Daniela Mendoza,+51 960256342,Trujillo,Web,2026-04-14,2,394.1,160.0,2.0,2.0,3.0,Leales,2026-02-13
+C0031,Camila Vega,+51 933754330,Callao,Instagram,2026-03-18,0,0.0,,,,,Prospecto (sin compra),
+C0032,Gabriela Rojas,+51 945868501,San Borja,Instagram,2026-02-13,2,478.9,203.0,2.0,2.0,3.0,Leales,
+C0033,Camila García,+51 996556981,Lince,Tienda,2026-01-06,2,722.1,234.0,2.0,2.0,4.0,Leales,2026-02-21
+C0034,Gabriela Flores,+51 960883561,Callao,TikTok,2026-08-16,0,0.0,,,,,Prospecto (sin compra),
+C0035,Carla García,+51 948465648,Surco,Instagram,2026-04-13,4,803.8,141.0,3.0,4.0,4.0,Campeones,
+C0036,Renzo Mendoza,+51 999468044,La Molina,WhatsApp,2026-07-24,0,0.0,,,,,Prospecto (sin compra),
+C0037,Luis Gutiérrez,+51 977738721,San Borja,WhatsApp,2026-08-21,1,149.0,26.0,4.0,1.0,1.0,Nuevos,
+C0038,Luis Gutiérrez,+51 913433200,La Molina,TikTok,2026-08-09,1,249.0,32.0,4.0,1.0,2.0,Nuevos,2026-10-09
+C0039,Andrés Rojas,+51 976936763,Surco,Web,2025-10-03,0,0.0,,,,,Prospecto (sin compra),
+C0040,Andrés García,+51 963287083,Piura,Instagram,2025-12-08,1,374.0,279.0,1.0,1.0,3.0,En riesgo,
+C0041,Kevin Ríos,+51 988957986,Piura,Tienda,2026-05-17,2,468.0,104.0,3.0,2.0,3.0,Leales,2026-06-30
+C0042,Daniela Vega,+51 974348734,Magdalena,Instagram,2026-02-24,1,358.0,204.0,2.0,1.0,2.0,Dormidos,
+C0043,Andrea Vargas,+51 955812236,Arequipa,Instagram,2026-01-18,1,299.0,224.0,2.0,1.0,2.0,Dormidos,
+C0044,Lucía Paredes,+51 965876036,Lince,Tienda,2026-07-27,0,0.0,,,,,Prospecto (sin compra),
+C0045,Bruno Quispe,+51 996705466,San Miguel,Web,2026-07-07,0,0.0,,,,,Prospecto (sin compra),
+C0046,Kevin Castillo,+51 973467065,Callao,Web,2026-04-26,1,186.0,135.0,3.0,1.0,1.0,Nuevos,
+C0047,Miguel Mendoza,+51 972980699,Callao,Instagram,2026-08-26,2,438.3,5.0,4.0,2.0,3.0,Leales,2026-10-03
+C0048,Diana Torres,+51 972046537,Jesús María,Instagram,2026-04-13,0,0.0,,,,,Prospecto (sin compra),
+C0049,Gabriela Paredes,+51 941708053,Callao,Instagram,2026-08-30,2,569.2,6.0,4.0,2.0,4.0,Leales,2026-10-06
+C0050,Camila Quispe,+51 933092327,Callao,Instagram,2026-01-20,0,0.0,,,,,Prospecto (sin compra),
+C0051,Rosa Vargas,+51 952991241,Los Olivos,Instagram,2026-03-09,0,0.0,,,,,Prospecto (sin compra),
+C0052,José Salazar,+51 963193149,Trujillo,Instagram,2026-07-17,0,0.0,,,,,Prospecto (sin compra),
+C0053,Kevin Flores,+51 958651850,Piura,WhatsApp,2026-06-08,1,224.0,92.0,3.0,1.0,2.0,Nuevos,2026-07-16
+C0054,Sofía Paredes,+51 957262849,Trujillo,Tienda,2026-06-05,1,161.1,86.0,3.0,1.0,1.0,Nuevos,
+C0055,Rosa Paredes,+51 994531473,Trujillo,WhatsApp,2026-08-09,1,224.1,37.0,4.0,1.0,2.0,Nuevos,
+C0056,Renzo Salazar,+51 950752735,Trujillo,Instagram,2026-02-21,0,0.0,,,,,Prospecto (sin compra),
+C0057,Luis Vargas,+51 980831367,San Miguel,Web,2026-06-01,1,254.15,113.0,3.0,1.0,2.0,Nuevos,2026-06-19
+C0058,Jorge Vega,+51 970143634,Callao,WhatsApp,2026-05-31,2,365.0,108.0,3.0,2.0,3.0,Leales,2026-07-11
+C0059,Carlos Huamán,+51 968557444,La Molina,Instagram,2026-01-07,0,0.0,,,,,Prospecto (sin compra),
+C0060,Carla García,+51 982337498,Los Olivos,Instagram,2025-11-21,1,158.1,279.0,1.0,1.0,1.0,Dormidos,2025-12-26
+C0061,Fernanda Chávez,+51 935240824,Miraflores,TikTok,2026-07-11,0,0.0,,,,,Prospecto (sin compra),
+C0062,Paola Torres,+51 971094777,Jesús María,Instagram,2025-10-27,3,816.0,284.0,1.0,3.0,4.0,En riesgo,2026-01-17
+C0063,Gabriela Vega,+51 911671902,Surco,Tienda,2026-03-05,0,0.0,,,,,Prospecto (sin compra),
+C0064,Lucía Castillo,+51 918699938,Lince,WhatsApp,2026-05-15,4,719.4,112.0,3.0,4.0,4.0,Campeones,
+C0065,Paola Paredes,+51 949909133,San Borja,Web,2025-12-20,0,0.0,,,,,Prospecto (sin compra),
+C0066,Andrea Mendoza,+51 981206797,San Borja,Instagram,2026-02-25,0,0.0,,,,,Prospecto (sin compra),
+C0067,Bruno Chávez,+51 971349361,San Miguel,Instagram,2025-12-16,2,374.1,259.0,1.0,2.0,3.0,En riesgo,
+C0068,Gabriela Torres,+51 910249947,San Isidro,WhatsApp,2026-03-05,1,311.0,202.0,2.0,1.0,2.0,Dormidos,
+C0069,Bruno Salazar,+51 948877190,Lince,Web,2026-08-06,1,236.0,24.0,4.0,1.0,2.0,Nuevos,
+C0070,Gabriela Quispe,+51 913990490,Trujillo,Web,2026-05-29,1,398.0,92.0,3.0,1.0,3.0,Nuevos,
+C0071,Diego Ríos,+51 942967175,Lince,Instagram,2025-11-23,0,0.0,,,,,Prospecto (sin compra),2025-12-09
+C0072,Daniela Gutiérrez,+51 967468071,Jesús María,Instagram,2025-11-29,0,0.0,,,,,Prospecto (sin compra),
+C0073,Andrés Salazar,+51 980876038,Jesús María,WhatsApp,2026-06-13,2,566.8,83.0,4.0,2.0,4.0,Leales,2026-07-21
+C0074,Jorge Ríos,+51 903482477,San Isidro,Instagram,2026-08-19,0,0.0,,,,,Prospecto (sin compra),
+C0075,Luis Castillo,+51 924808613,Piura,Tienda,2026-05-25,3,487.9,100.0,3.0,3.0,3.0,Campeones,2026-07-04
+C0076,Sofía Torres,+51 974846773,Magdalena,WhatsApp,2026-04-15,0,0.0,,,,,Prospecto (sin compra),
+C0077,Fernanda Torres,+51 914658404,Arequipa,Instagram,2026-07-28,0,0.0,,,,,Prospecto (sin compra),
+C0078,José Vega,+51 927875588,Lince,WhatsApp,2026-03-14,1,149.0,188.0,2.0,1.0,1.0,Dormidos,
+C0079,Fernanda Castillo,+51 996360576,Lince,TikTok,2026-08-30,4,925.65,3.0,4.0,4.0,4.0,Campeones,2025-12-19
+C0080,Mariana Vega,+51 902895171,San Miguel,Tienda,2025-10-08,0,0.0,,,,,Prospecto (sin compra),
+C0081,Miguel Torres,+51 962174596,Callao,Instagram,2026-03-18,1,211.65,181.0,2.0,1.0,2.0,Dormidos,
+C0082,Renzo Salazar,+51 957809134,La Molina,Web,2026-05-11,0,0.0,,,,,Prospecto (sin compra),
+C0083,Sofía García,+51 972400504,Jesús María,WhatsApp,2025-12-14,0,0.0,,,,,Prospecto (sin compra),
+C0084,Andrea Paredes,+51 992221969,Callao,Instagram,2026-07-26,0,0.0,,,,,Prospecto (sin compra),
+C0085,Mariana Castillo,+51 974740748,Surco,Instagram,2026-03-26,2,664.9,160.0,2.0,2.0,4.0,Leales,2026-05-08
+C0086,José Chávez,+51 964743671,La Molina,WhatsApp,2026-04-02,1,159.0,170.0,2.0,1.0,1.0,Dormidos,2026-05-09
+C0087,José Chávez,+51 940640909,Arequipa,WhatsApp,2026-02-24,3,600.5,187.0,2.0,3.0,4.0,Leales,2026-03-12
+C0088,Andrés Castillo,+51 995339421,Callao,WhatsApp,2026-03-08,1,199.0,183.0,2.0,1.0,1.0,Dormidos,
+C0089,Kevin Ríos,+51 909521456,Surco,Instagram,2026-07-04,2,788.0,59.0,4.0,2.0,4.0,Leales,
+C0090,Natalia Vargas,+51 924745171,Surco,Web,2026-01-24,1,448.2,237.0,2.0,1.0,3.0,En riesgo,
+C0091,Renzo Salazar,+51 985160481,Magdalena,WhatsApp,2026-02-12,0,0.0,,,,,Prospecto (sin compra),
+C0092,José Salazar,+51 951370985,Los Olivos,Instagram,2025-11-02,1,169.0,316.0,1.0,1.0,1.0,Dormidos,2025-12-06
+C0093,Jorge Ríos,+51 946120047,San Isidro,Instagram,2026-07-03,1,161.1,72.0,4.0,1.0,1.0,Nuevos,
+C0094,Mariana Salazar,+51 975869261,Piura,WhatsApp,2026-04-27,2,371.15,137.0,3.0,2.0,3.0,Leales,
+C0095,Gabriela Flores,+51 953773515,San Miguel,Tienda,2026-08-27,0,0.0,,,,,Prospecto (sin compra),
+C0096,Natalia Flores,+51 964317139,Miraflores,Instagram,2026-03-20,0,0.0,,,,,Prospecto (sin compra),
+C0097,Andrea Torres,+51 993183933,Jesús María,Web,2026-08-02,2,358.0,35.0,4.0,2.0,2.0,Leales,
+C0098,Valeria Vargas,+51 922842102,Miraflores,WhatsApp,2026-01-30,1,179.0,233.0,2.0,1.0,1.0,Dormidos,
+C0099,José Gutiérrez,+51 902402681,Arequipa,Instagram,2026-05-18,2,521.0,125.0,3.0,2.0,3.0,Leales,
+C0100,Andrés Huamán,+51 989178390,Arequipa,Web,2026-06-24,1,152.1,72.0,4.0,1.0,1.0,Nuevos,2026-08-06
+C0101,Paola Ríos,+51 900766177,San Isidro,Tienda,2026-03-14,1,483.3,175.0,2.0,1.0,3.0,En riesgo,2026-04-09
+C0102,Luis Torres,+51 912499856,Los Olivos,WhatsApp,2026-05-21,3,864.0,113.0,3.0,3.0,4.0,Campeones,2026-06-17
+C0103,Diego Paredes,+51 911836736,Jesús María,Tienda,2026-04-23,3,922.8,141.0,3.0,3.0,4.0,Campeones,2026-06-07
+C0104,Diana García,+51 956545271,San Isidro,Tienda,2025-11-17,3,816.9,278.0,1.0,3.0,4.0,En riesgo,2026-01-10
+C0105,Diana García,+51 952809885,Callao,Instagram,2026-03-31,1,299.0,171.0,2.0,1.0,2.0,Dormidos,2026-04-13
+C0106,Renzo Paredes,+51 904945198,La Molina,Instagram,2026-06-04,1,340.2,232.0,2.0,1.0,2.0,Dormidos,
+C0107,Andrea García,+51 958514936,Piura,WhatsApp,2026-08-15,2,468.1,15.0,4.0,2.0,3.0,Leales,
+C0108,Luis Quispe,+51 994024455,Miraflores,Instagram,2025-12-13,1,189.9,287.0,1.0,1.0,1.0,Dormidos,
+C0109,José Salazar,+51 912018366,Magdalena,Instagram,2026-04-08,3,577.0,143.0,3.0,3.0,4.0,Campeones,2026-06-03
+C0110,Paola Gutiérrez,+51 999102290,Callao,Instagram,2026-05-15,1,159.0,125.0,3.0,1.0,1.0,Nuevos,2026-06-25
+C0111,Renzo Paredes,+51 979764381,Jesús María,WhatsApp,2026-02-23,2,328.0,137.0,3.0,2.0,2.0,Leales,2026-03-10
+C0112,Renzo Vega,+51 984036900,La Molina,Instagram,2026-01-17,1,236.0,229.0,2.0,1.0,2.0,Dormidos,2026-03-08
+C0113,Andrés Torres,+51 944510762,Surco,WhatsApp,2026-01-26,0,0.0,,,,,Prospecto (sin compra),
+C0114,Diego Huamán,+51 916060715,Los Olivos,WhatsApp,2026-04-26,1,278.0,144.0,3.0,1.0,2.0,Nuevos,
+C0115,Bruno Paredes,+51 941605297,Piura,Web,2026-04-04,0,0.0,,,,,Prospecto (sin compra),
+C0116,Lucía Paredes,+51 913696816,Piura,Instagram,2026-03-23,0,0.0,,,,,Prospecto (sin compra),
+C0117,Andrea Gutiérrez,+51 921818835,Jesús María,Web,2026-08-27,2,612.9,5.0,4.0,2.0,4.0,Leales,
+C0118,Mariana Castillo,+51 912432921,Surco,TikTok,2026-08-18,3,637.0,16.0,4.0,3.0,4.0,Campeones,2026-06-02
+C0119,Milagros Ríos,+51 999799552,Magdalena,Instagram,2026-05-15,2,448.2,110.0,3.0,2.0,3.0,Leales,2026-07-02
+C0120,Jorge Chávez,+51 949058147,Magdalena,Instagram,2026-04-07,0,0.0,,,,,Prospecto (sin compra),
+C0121,Paola Rojas,+51 919986798,Trujillo,Web,2025-10-22,2,418.0,321.0,1.0,2.0,3.0,En riesgo,2025-11-20
+C0122,Rosa Ramírez,+51 959782071,Trujillo,Tienda,2026-03-25,2,410.1,140.0,3.0,2.0,3.0,Leales,
+C0123,Bruno Rojas,+51 982037788,Los Olivos,Instagram,2026-04-09,1,236.0,153.0,2.0,1.0,2.0,Dormidos,2026-05-08
+C0124,Paola Salazar,+51 965905151,San Miguel,Web,2026-02-23,0,0.0,,,,,Prospecto (sin compra),
+C0125,Gabriela Torres,+51 951925462,Los Olivos,Web,2025-11-13,3,700.6,142.0,3.0,3.0,4.0,Campeones,2026-06-08
+C0126,Paola Salazar,+51 952816850,Jesús María,Instagram,2026-01-18,0,0.0,,,,,Prospecto (sin compra),2026-01-28
+C0127,Carla Vega,+51 933221418,Trujillo,WhatsApp,2026-06-27,2,395.0,66.0,4.0,2.0,3.0,Leales,
+C0128,Camila Gutiérrez,+51 992962229,Trujillo,Tienda,2026-05-13,2,553.1,110.0,3.0,2.0,3.0,Leales,2026-06-21
+C0129,Camila Paredes,+51 953794738,La Molina,Instagram,2026-05-29,1,169.15,280.0,1.0,1.0,1.0,Dormidos,2026-01-02
+C0130,Fernanda Huamán,+51 997746886,Surco,Tienda,2026-08-06,4,818.15,29.0,4.0,4.0,4.0,Campeones,
+C0131,Mariana Vargas,+51 907581814,San Isidro,Web,2026-02-17,3,921.0,193.0,2.0,3.0,4.0,Leales,2026-04-08
+C0132,Rosa Torres,+51 961375060,Lince,WhatsApp,2026-01-29,0,0.0,,,,,Prospecto (sin compra),
+C0133,Alejandra Rojas,+51 953051522,Miraflores,Instagram,2026-05-30,0,0.0,,,,,Prospecto (sin compra),
+C0134,Bruno Torres,+51 977901043,Piura,Instagram,2026-08-08,1,264.35,36.0,4.0,1.0,2.0,Nuevos,2026-09-13
+C0135,Diego Paredes,+51 914341036,Callao,Web,2026-05-23,2,304.15,101.0,3.0,2.0,2.0,Leales,
+C0136,Lucía García,+51 979808932,San Borja,WhatsApp,2026-08-11,3,636.0,26.0,4.0,3.0,4.0,Campeones,2026-09-02
+C0137,Natalia Castillo,+51 996218518,San Miguel,WhatsApp,2026-06-17,1,189.0,74.0,4.0,1.0,1.0,Nuevos,2026-08-04
+C0138,Carlos Quispe,+51 967065405,Trujillo,Instagram,2026-02-01,0,0.0,,,,,Prospecto (sin compra),
+C0139,Miguel García,+51 995205852,Piura,Web,2026-05-26,1,224.1,99.0,3.0,1.0,2.0,Nuevos,2026-07-21
+C0140,Bruno Vega,+51 922170430,Trujillo,Instagram,2025-10-22,1,224.1,336.0,1.0,1.0,2.0,Dormidos,
+C0141,Carla Chávez,+51 986874034,Jesús María,Tienda,2025-10-25,0,0.0,,,,,Prospecto (sin compra),
+C0142,Jorge Gutiérrez,+51 941566765,Surco,WhatsApp,2026-06-12,0,0.0,,,,,Prospecto (sin compra),
+C0143,Natalia Vargas,+51 916169284,Jesús María,Instagram,2026-03-17,0,0.0,,,,,Prospecto (sin compra),
+C0144,Renzo Chávez,+51 947962757,Miraflores,Web,2026-03-30,3,528.1,152.0,2.0,3.0,3.0,Leales,2026-04-28
+C0145,Luis Paredes,+51 940165820,Surco,Tienda,2026-05-13,1,179.35,117.0,3.0,1.0,1.0,Nuevos,
+C0146,Camila Torres,+51 913556909,Surco,Web,2026-04-08,0,0.0,,,,,Prospecto (sin compra),
+C0147,Natalia Ríos,+51 919285654,La Molina,TikTok,2025-10-14,2,401.15,291.0,1.0,2.0,3.0,En riesgo,2025-11-06
+C0148,Miguel Mendoza,+51 978681447,La Molina,TikTok,2026-02-24,0,0.0,,,,,Prospecto (sin compra),
+C0149,Bruno Vega,+51 931217271,Trujillo,Web,2026-03-13,1,316.2,181.0,2.0,1.0,2.0,Dormidos,
+C0150,Renzo Huamán,+51 918844225,San Miguel,Instagram,2026-01-11,1,125.1,238.0,2.0,1.0,1.0,Dormidos,2026-03-02
+C0151,Kevin Torres,+51 937058957,Trujillo,TikTok,2025-12-06,2,497.0,273.0,1.0,2.0,3.0,En riesgo,
+C0152,Luis Rojas,+51 914678669,San Isidro,Instagram,2026-03-12,2,523.0,188.0,2.0,2.0,3.0,Leales,
+C0153,Jorge Rojas,+51 977852892,Trujillo,TikTok,2026-05-10,2,317.1,118.0,3.0,2.0,2.0,Leales,
+C0154,Diego Flores,+51 918242253,Jesús María,TikTok,2026-06-23,1,189.0,74.0,4.0,1.0,1.0,Nuevos,2026-07-29
+C0155,Paola Rojas,+51 943842498,San Isidro,WhatsApp,2025-12-26,2,533.15,258.0,1.0,2.0,3.0,En riesgo,
+C0156,José Torres,+51 929959001,Miraflores,TikTok,2026-07-23,1,199.0,46.0,4.0,1.0,1.0,Nuevos,2026-08-22
+C0157,Gabriela Ramírez,+51 996907844,Magdalena,Instagram,2026-04-26,1,249.0,147.0,3.0,1.0,2.0,Nuevos,2026-05-15
+C0158,Paola Ríos,+51 910276773,Jesús María,WhatsApp,2026-03-10,1,236.0,193.0,2.0,1.0,2.0,Dormidos,2026-04-18
+C0159,Bruno Gutiérrez,+51 956258815,La Molina,WhatsApp,2026-02-14,2,815.4,215.0,2.0,2.0,4.0,Leales,2026-03-11
+C0160,Rosa Castillo,+51 921046963,Piura,Tienda,2026-03-17,0,0.0,,,,,Prospecto (sin compra),
+C0161,José Gutiérrez,+51 932787747,Miraflores,Instagram,2026-04-20,1,167.4,143.0,3.0,1.0,1.0,Nuevos,2026-05-31
+C0162,Diego Ríos,+51 933950047,Los Olivos,Tienda,2026-08-31,2,597.0,232.0,2.0,2.0,4.0,Leales,2025-12-28
+C0163,Renzo Vega,+51 948016245,Trujillo,WhatsApp,2025-10-24,3,532.0,311.0,1.0,3.0,3.0,En riesgo,2025-11-19
+C0164,Alejandra Flores,+51 998358416,San Miguel,WhatsApp,2026-07-09,0,0.0,,,,,Prospecto (sin compra),
+C0165,Gabriela García,+51 921655852,La Molina,WhatsApp,2026-04-24,0,0.0,,,,,Prospecto (sin compra),
+C0166,Diego Flores,+51 900257872,Los Olivos,Tienda,2025-12-11,1,159.0,271.0,1.0,1.0,1.0,Dormidos,
+C0167,Carla Gutiérrez,+51 926949588,San Miguel,WhatsApp,2026-07-16,1,169.0,277.0,1.0,1.0,1.0,Dormidos,
+C0168,Paola Vega,+51 905516940,Los Olivos,WhatsApp,2026-07-24,2,304.2,39.0,4.0,2.0,2.0,Leales,2026-09-09
+C0169,José Castillo,+51 909728962,Piura,Web,2025-10-17,4,1067.15,140.0,3.0,4.0,4.0,Campeones,
+C0170,José García,+51 930756263,Lince,WhatsApp,2026-08-10,0,0.0,,,,,Prospecto (sin compra),
+C0171,Milagros Flores,+51 928385786,Jesús María,TikTok,2026-05-24,0,0.0,,,,,Prospecto (sin compra),
+C0172,Carlos Gutiérrez,+51 985497334,San Miguel,Instagram,2026-03-02,0,0.0,,,,,Prospecto (sin compra),
+C0173,Andrés Chávez,+51 937575844,San Isidro,WhatsApp,2026-07-06,1,311.0,55.0,4.0,1.0,2.0,Nuevos,
+C0174,Alejandra Salazar,+51 952404157,Callao,Instagram,2026-06-03,0,0.0,,,,,Prospecto (sin compra),
+C0175,Fernanda Ramírez,+51 984842199,La Molina,Instagram,2026-06-29,0,0.0,,,,,Prospecto (sin compra),
+C0176,Andrea Castillo,+51 901657120,San Miguel,TikTok,2025-12-20,2,767.15,252.0,1.0,2.0,4.0,En riesgo,2026-02-08
+C0177,Diana Vega,+51 973454019,La Molina,WhatsApp,2025-10-20,1,179.0,314.0,1.0,1.0,1.0,Dormidos,
+C0178,Daniela Paredes,+51 920672400,San Borja,WhatsApp,2025-11-24,2,573.0,278.0,1.0,2.0,4.0,En riesgo,2025-12-27
+C0179,Carla Chávez,+51 978872874,La Molina,Tienda,2026-03-19,1,299.0,187.0,2.0,1.0,2.0,Dormidos,
+C0180,Daniela Ríos,+51 942054932,Los Olivos,Tienda,2026-04-26,2,293.1,136.0,3.0,2.0,2.0,Leales,
+C0181,Diana Gutiérrez,+51 916122753,Miraflores,Instagram,2026-01-29,1,143.1,283.0,1.0,1.0,1.0,Dormidos,2026-01-09
+C0182,Rosa Vargas,+51 954990453,Miraflores,Web,2026-05-27,3,659.0,103.0,3.0,3.0,4.0,Campeones,2026-07-20
+C0183,Paola Mendoza,+51 968414593,La Molina,TikTok,2026-06-02,1,236.0,100.0,3.0,1.0,2.0,Nuevos,
+C0184,Mariana Ríos,+51 995687833,Callao,Web,2025-11-11,1,186.0,299.0,1.0,1.0,1.0,Dormidos,2026-01-01
+C0185,Diego Ríos,+51 985191088,La Molina,WhatsApp,2025-12-16,3,589.6,264.0,1.0,3.0,4.0,En riesgo,2026-01-07
+C0186,Daniela Gutiérrez,+51 987139718,Magdalena,Tienda,2026-05-21,0,0.0,,,,,Prospecto (sin compra),2026-05-31
+C0187,Mariana Paredes,+51 979087406,San Borja,Tienda,2026-01-20,0,0.0,,,,,Prospecto (sin compra),
+C0188,José Rojas,+51 906518017,Miraflores,Instagram,2026-01-01,1,199.0,259.0,1.0,1.0,1.0,Dormidos,
+C0189,Andrés Torres,+51 965676618,Surco,Web,2026-03-28,0,0.0,,,,,Prospecto (sin compra),2026-05-18
+C0190,Sofía Mendoza,+51 986823004,Magdalena,Web,2026-07-06,0,0.0,,,,,Prospecto (sin compra),
+C0191,Diana Salazar,+51 933752431,Miraflores,Tienda,2026-05-03,1,169.0,137.0,3.0,1.0,1.0,Nuevos,2026-06-02
+C0192,Luis Quispe,+51 933119079,Callao,Web,2025-10-25,3,617.9,144.0,3.0,3.0,4.0,Campeones,2025-11-26
+C0193,Andrea Flores,+51 967383028,San Borja,Instagram,2026-07-22,4,737.1,38.0,4.0,4.0,4.0,Campeones,2026-05-17
+C0194,Carla Gutiérrez,+51 934283644,Miraflores,WhatsApp,2026-07-30,1,224.0,50.0,4.0,1.0,2.0,Nuevos,2026-08-18
+C0195,Miguel Mendoza,+51 968705685,Arequipa,WhatsApp,2025-12-16,2,368.0,276.0,1.0,2.0,3.0,En riesgo,2026-01-30
+C0196,Paola Salazar,+51 928733427,Miraflores,WhatsApp,2026-05-02,2,368.15,138.0,3.0,2.0,3.0,Leales,
+C0197,Carlos Torres,+51 963435175,San Isidro,WhatsApp,2026-01-06,1,598.0,252.0,1.0,1.0,4.0,En riesgo,2026-02-16
+C0198,Camila Vargas,+51 969901398,La Molina,WhatsApp,2026-03-20,2,436.4,171.0,2.0,2.0,3.0,Leales,2026-04-17
+C0199,Paola Quispe,+51 933173936,La Molina,WhatsApp,2026-02-22,0,0.0,,,,,Prospecto (sin compra),
+C0200,Alejandra Ríos,+51 985445877,San Isidro,Tienda,2026-05-29,0,0.0,,,,,Prospecto (sin compra),
+C0201,Andrés Gutiérrez,+51 935560932,Miraflores,Instagram,2026-07-27,0,0.0,,,,,Prospecto (sin compra),
+C0202,José Paredes,+51 942353693,Magdalena,WhatsApp,2026-03-22,3,636.6,161.0,2.0,3.0,4.0,Leales,
+C0203,Gabriela Vega,+51 977252287,Surco,Tienda,2026-07-05,3,1135.35,61.0,4.0,3.0,4.0,Campeones,2026-08-10
+C0204,Jorge Flores,+51 980100623,San Isidro,Web,2025-10-05,2,438.9,330.0,1.0,2.0,3.0,En riesgo,
+C0205,Fernanda Ríos,+51 950997700,San Miguel,WhatsApp,2025-10-07,0,0.0,,,,,Prospecto (sin compra),
+C0206,Valeria Vargas,+51 984086211,San Miguel,Instagram,2026-01-07,0,0.0,,,,,Prospecto (sin compra),
+C0207,Luis Vargas,+51 954615679,La Molina,TikTok,2026-01-24,2,423.1,229.0,2.0,2.0,3.0,Leales,
+C0208,Paola Rojas,+51 901666870,Callao,Instagram,2025-12-27,0,0.0,,,,,Prospecto (sin compra),
+C0209,Lucía Vega,+51 965918033,Piura,Web,2026-07-18,0,0.0,,,,,Prospecto (sin compra),
+C0210,Milagros Vargas,+51 901489025,Miraflores,TikTok,2026-07-28,3,569.0,37.0,4.0,3.0,4.0,Campeones,2026-09-08
+C0211,Mariana Salazar,+51 914293968,Jesús María,WhatsApp,2025-12-11,1,311.0,264.0,1.0,1.0,2.0,Dormidos,2026-02-03
+C0212,Kevin Rojas,+51 985016315,Los Olivos,Web,2026-08-01,0,0.0,,,,,Prospecto (sin compra),
+C0213,Alejandra Gutiérrez,+51 904773586,Lince,Instagram,2026-07-27,0,0.0,,,,,Prospecto (sin compra),
+C0214,Renzo Salazar,+51 919431142,Lince,Web,2026-08-21,0,0.0,,,,,Prospecto (sin compra),
+C0215,Mariana Salazar,+51 955110475,Trujillo,Instagram,2025-12-07,4,1126.2,226.0,2.0,4.0,4.0,Leales,2026-01-01
+C0216,Lucía Mendoza,+51 967888610,San Isidro,WhatsApp,2025-11-17,2,591.1,294.0,1.0,2.0,4.0,En riesgo,
+C0217,Luis Gutiérrez,+51 960466183,Los Olivos,WhatsApp,2026-04-13,0,0.0,,,,,Prospecto (sin compra),
+C0218,Daniela Torres,+51 944472126,San Borja,WhatsApp,2026-06-05,0,0.0,,,,,Prospecto (sin compra),
+C0219,Kevin Rojas,+51 954379937,San Isidro,Instagram,2025-10-04,2,747.0,337.0,1.0,2.0,4.0,En riesgo,2025-11-04
+C0220,Alejandra Gutiérrez,+51 996575692,San Borja,Instagram,2026-01-11,0,0.0,,,,,Prospecto (sin compra),
+C0221,Milagros Gutiérrez,+51 926547935,Lince,Instagram,2026-04-20,3,697.1,141.0,3.0,3.0,4.0,Campeones,2026-05-10
+C0222,Natalia García,+51 993982807,Arequipa,Instagram,2026-02-27,4,748.1,183.0,2.0,4.0,4.0,Leales,2026-04-15
+C0223,Bruno Rojas,+51 967243426,Trujillo,WhatsApp,2026-05-18,0,0.0,,,,,Prospecto (sin compra),
+C0224,Luis Vega,+51 996886805,Arequipa,Tienda,2026-07-02,1,443.7,145.0,3.0,1.0,3.0,Nuevos,2026-05-22
+C0225,Luis Rojas,+51 913529096,Trujillo,Instagram,2026-05-09,0,0.0,,,,,Prospecto (sin compra),
+C0226,Sofía Quispe,+51 914388899,La Molina,WhatsApp,2026-04-19,1,159.0,142.0,3.0,1.0,1.0,Nuevos,2026-05-28
+C0227,Rosa Torres,+51 950714611,Piura,TikTok,2025-12-12,1,186.0,275.0,1.0,1.0,1.0,Dormidos,2026-01-12
+C0228,Natalia Chávez,+51 957387571,Magdalena,Web,2026-05-20,3,510.35,120.0,3.0,3.0,3.0,Campeones,2026-03-15
+C0229,Carla Rojas,+51 940105123,San Miguel,Instagram,2025-12-21,0,0.0,,,,,Prospecto (sin compra),
+C0230,Carla Paredes,+51 973622660,Arequipa,WhatsApp,2026-01-10,0,0.0,,,,,Prospecto (sin compra),
+C0231,Rosa Paredes,+51 960334191,Trujillo,Tienda,2026-01-04,2,987.9,223.0,2.0,2.0,4.0,Leales,
+C0232,Natalia Gutiérrez,+51 937147859,Lince,WhatsApp,2026-07-28,0,0.0,,,,,Prospecto (sin compra),
+C0233,Sofía Huamán,+51 957924991,Callao,Instagram,2025-11-30,1,143.65,272.0,1.0,1.0,1.0,Dormidos,
+C0234,Andrea Chávez,+51 912528669,Surco,WhatsApp,2026-05-05,0,0.0,,,,,Prospecto (sin compra),
+C0235,Daniela Vega,+51 982827422,Jesús María,Tienda,2026-08-14,1,174.0,30.0,4.0,1.0,1.0,Nuevos,
+C0236,Camila Huamán,+51 907236887,Lince,Web,2026-05-01,1,179.1,141.0,3.0,1.0,1.0,Nuevos,2026-06-11
+C0237,Bruno Ríos,+51 972190340,San Borja,Instagram,2026-02-25,0,0.0,,,,,Prospecto (sin compra),
+C0238,Daniela Ríos,+51 997881914,Trujillo,WhatsApp,2026-04-06,0,0.0,,,,,Prospecto (sin compra),
+C0239,Carlos Flores,+51 978361340,Magdalena,Instagram,2025-11-14,0,0.0,,,,,Prospecto (sin compra),
+C0240,Rosa García,+51 933959629,Surco,Web,2026-01-14,2,443.15,145.0,3.0,2.0,3.0,Leales,
+C0241,Kevin Flores,+51 995849825,Arequipa,Instagram,2026-07-21,0,0.0,,,,,Prospecto (sin compra),
+C0242,Gabriela García,+51 926042232,Arequipa,Instagram,2026-02-04,0,0.0,,,,,Prospecto (sin compra),
+C0243,Andrés Salazar,+51 972946671,Callao,Web,2025-11-17,2,348.1,305.0,1.0,2.0,2.0,En riesgo,2025-12-09
+C0244,Alejandra Vargas,+51 957759017,Callao,Web,2026-04-02,1,264.35,153.0,2.0,1.0,2.0,Dormidos,
+C0245,Lucía Salazar,+51 936374545,San Miguel,WhatsApp,2026-07-17,3,663.2,50.0,4.0,3.0,4.0,Campeones,
+C0246,Milagros Gutiérrez,+51 900170127,Magdalena,Instagram,2026-05-08,3,830.0,121.0,3.0,3.0,4.0,Campeones,
+C0247,Fernanda Torres,+51 942415415,Callao,Tienda,2025-12-24,2,834.0,257.0,1.0,2.0,4.0,En riesgo,2026-02-18
+C0248,Camila Salazar,+51 943611037,San Isidro,Instagram,2026-01-24,0,0.0,,,,,Prospecto (sin compra),
+C0249,Diego Ríos,+51 900516271,La Molina,WhatsApp,2025-11-22,1,190.4,297.0,1.0,1.0,1.0,Dormidos,2025-12-13
+C0250,Sofía Gutiérrez,+51 954262218,Los Olivos,Instagram,2026-08-29,3,628.8,1.0,4.0,3.0,4.0,Campeones,2026-10-18
+C0251,Daniela Ríos,+51 953269731,San Isidro,Instagram,2025-12-03,1,200.6,270.0,1.0,1.0,2.0,Dormidos,
+C0252,José Salazar,+51 956523413,San Miguel,WhatsApp,2026-08-08,2,494.7,42.0,4.0,2.0,3.0,Leales,2026-08-26
+C0253,Paola Quispe,+51 943898364,Callao,Instagram,2026-01-31,1,398.0,214.0,2.0,1.0,3.0,En riesgo,
+C0254,Milagros Salazar,+51 913791805,Jesús María,Instagram,2026-07-19,2,408.0,62.0,4.0,2.0,3.0,Leales,2026-03-12
+C0255,Diana Huamán,+51 982710910,San Borja,Instagram,2025-10-31,2,453.15,315.0,1.0,2.0,3.0,En riesgo,2025-11-29
+C0256,Kevin Salazar,+51 984866618,San Miguel,WhatsApp,2026-02-20,3,908.0,193.0,2.0,3.0,4.0,Leales,2026-04-13
+C0257,Lucía Chávez,+51 918328569,Callao,Web,2026-08-29,3,705.3,2.0,4.0,3.0,4.0,Campeones,
+C0258,Renzo Rojas,+51 946303161,Magdalena,WhatsApp,2025-10-29,0,0.0,,,,,Prospecto (sin compra),
+C0259,Paola Mendoza,+51 910202758,San Miguel,Web,2026-02-10,1,311.0,214.0,2.0,1.0,2.0,Dormidos,
+C0260,Daniela Huamán,+51 924105648,San Isidro,Instagram,2026-07-23,2,669.9,41.0,4.0,2.0,4.0,Leales,
+C0261,Jorge Rojas,+51 977850792,Jesús María,Instagram,2025-11-22,0,0.0,,,,,Prospecto (sin compra),
+C0262,José García,+51 938000307,Jesús María,WhatsApp,2025-12-16,3,446.15,259.0,1.0,3.0,3.0,En riesgo,2026-01-31
+C0263,Daniela Flores,+51 986353654,Piura,Instagram,2026-04-09,3,510.15,158.0,2.0,3.0,3.0,Leales,2026-05-24
+C0264,Sofía Flores,+51 923806174,Trujillo,Tienda,2026-03-17,2,560.0,143.0,3.0,2.0,4.0,Leales,2026-05-01
+C0265,Lucía Ríos,+51 905349493,Magdalena,WhatsApp,2026-06-10,1,211.0,84.0,3.0,1.0,2.0,Nuevos,
+C0266,Andrés Ramírez,+51 983206038,Jesús María,WhatsApp,2025-10-05,0,0.0,,,,,Prospecto (sin compra),
+C0267,Carla Quispe,+51 964138367,Miraflores,TikTok,2025-12-12,1,135.15,264.0,1.0,1.0,1.0,Dormidos,
+C0268,Bruno Vargas,+51 910386571,Los Olivos,Instagram,2025-12-08,1,211.0,268.0,1.0,1.0,2.0,Dormidos,
+C0269,Jorge Salazar,+51 919906234,San Borja,Tienda,2026-04-20,0,0.0,,,,,Prospecto (sin compra),
+C0270,Bruno Gutiérrez,+51 957431329,San Isidro,Instagram,2025-12-24,2,500.35,254.0,1.0,2.0,3.0,En riesgo,2026-01-01
+C0271,Rosa Ríos,+51 956185374,Magdalena,Instagram,2025-12-01,3,770.25,283.0,1.0,3.0,4.0,En riesgo,2025-12-10
+C0272,Lucía Mendoza,+51 949035213,Jesús María,WhatsApp,2025-10-26,1,236.0,323.0,1.0,1.0,2.0,Dormidos,
+C0273,Renzo Chávez,+51 942067883,San Isidro,WhatsApp,2025-12-11,1,169.0,264.0,1.0,1.0,1.0,Dormidos,2026-02-06
+C0274,Sofía Quispe,+51 903236519,Los Olivos,Instagram,2025-11-08,1,139.0,297.0,1.0,1.0,1.0,Dormidos,2025-12-19
+C0275,Valeria Rojas,+51 937215107,Miraflores,Instagram,2026-07-21,2,293.1,40.0,4.0,2.0,2.0,Leales,2026-08-30
+C0276,Diana Salazar,+51 970662532,San Borja,Instagram,2025-12-16,1,423.3,224.0,2.0,1.0,3.0,En riesgo,
+C0277,Camila Castillo,+51 947687014,Lince,Instagram,2026-01-11,0,0.0,,,,,Prospecto (sin compra),
+C0278,Jorge Castillo,+51 980657875,Los Olivos,WhatsApp,2026-04-17,1,169.15,145.0,3.0,1.0,1.0,Nuevos,
+C0279,Gabriela Mendoza,+51 905930407,San Miguel,WhatsApp,2026-07-27,0,0.0,,,,,Prospecto (sin compra),
+C0280,Andrea Mendoza,+51 913348039,Piura,TikTok,2026-04-17,0,0.0,,,,,Prospecto (sin compra),
+C0281,Natalia Mendoza,+51 923955905,Los Olivos,WhatsApp,2026-07-16,1,143.1,45.0,4.0,1.0,1.0,Nuevos,
+C0282,Fernanda Vega,+51 984270103,Los Olivos,Instagram,2026-06-27,2,278.0,64.0,4.0,2.0,2.0,Leales,2026-06-01
+C0283,Milagros Quispe,+51 959325250,Miraflores,Instagram,2025-12-12,0,0.0,,,,,Prospecto (sin compra),
+C0284,Andrés García,+51 985156915,San Borja,Instagram,2025-12-20,1,199.0,289.0,1.0,1.0,1.0,Dormidos,2026-01-08
+C0285,Miguel Paredes,+51 975289539,Piura,Instagram,2026-03-07,1,249.0,176.0,2.0,1.0,2.0,Dormidos,2026-04-07
+C0286,Miguel Chávez,+51 922096902,Los Olivos,Instagram,2026-08-10,1,211.0,39.0,4.0,1.0,2.0,Nuevos,2026-09-17
+C0287,Andrea García,+51 972513552,Callao,Tienda,2025-11-15,1,159.0,304.0,1.0,1.0,1.0,Dormidos,
+C0288,Bruno Gutiérrez,+51 970433154,Trujillo,Instagram,2025-10-01,0,0.0,,,,,Prospecto (sin compra),
+C0289,Camila Salazar,+51 976267658,Lince,Instagram,2026-06-03,2,470.15,110.0,3.0,2.0,3.0,Leales,
+C0290,Kevin Castillo,+51 927104054,San Isidro,Instagram,2025-12-27,0,0.0,,,,,Prospecto (sin compra),
+C0291,Alejandra Mendoza,+51 918159970,Lince,TikTok,2025-12-24,0,0.0,,,,,Prospecto (sin compra),
+C0292,Luis Paredes,+51 920153368,Arequipa,TikTok,2026-07-04,3,668.1,56.0,4.0,3.0,4.0,Campeones,
+C0293,Gabriela Chávez,+51 943106987,Surco,Instagram,2025-10-02,0,0.0,,,,,Prospecto (sin compra),
+C0294,Diana Rojas,+51 949731032,Callao,Instagram,2025-11-11,0,0.0,,,,,Prospecto (sin compra),
+C0295,Milagros García,+51 946774186,Surco,WhatsApp,2026-04-14,1,317.9,289.0,1.0,1.0,2.0,Dormidos,
+C0296,Natalia Mendoza,+51 970477434,Los Olivos,Instagram,2025-11-19,1,318.0,289.0,1.0,1.0,2.0,Dormidos,2026-01-16
+C0297,Lucía Huamán,+51 986938068,Lince,TikTok,2026-06-01,2,410.0,229.0,2.0,2.0,3.0,Leales,2025-12-25
+C0298,José Castillo,+51 974160898,Trujillo,WhatsApp,2026-08-14,1,186.0,24.0,4.0,1.0,1.0,Nuevos,
+C0299,Mariana García,+51 972233206,San Isidro,TikTok,2026-05-11,2,488.0,131.0,3.0,2.0,3.0,Leales,2026-06-17
+C0300,Fernanda Torres,+51 994511686,San Miguel,Instagram,2026-02-19,1,186.0,209.0,2.0,1.0,1.0,Dormidos,
+C0301,Diego Ríos,+51 909986162,Surco,WhatsApp,2026-07-26,0,0.0,,,,,Prospecto (sin compra),
+C0302,Andrés García,+51 919148564,Lince,Web,2026-07-20,2,317.7,49.0,4.0,2.0,2.0,Leales,
+C0303,Luis Vega,+51 902462996,Miraflores,WhatsApp,2026-03-19,1,249.0,167.0,2.0,1.0,2.0,Dormidos,
+C0304,Bruno Castillo,+51 907450544,San Borja,Tienda,2025-11-20,0,0.0,,,,,Prospecto (sin compra),
+C0305,Andrea Torres,+51 947546913,Magdalena,Instagram,2026-04-27,3,562.65,130.0,3.0,3.0,4.0,Campeones,
+C0306,Miguel Vega,+51 985082148,Lince,Instagram,2026-06-26,0,0.0,,,,,Prospecto (sin compra),
+C0307,José Quispe,+51 923303070,Jesús María,Web,2026-02-18,1,224.0,213.0,2.0,1.0,2.0,Dormidos,
+C0308,Natalia Ríos,+51 986103579,Magdalena,Instagram,2026-05-31,3,546.15,103.0,3.0,3.0,3.0,Campeones,2026-06-18
+C0309,José Huamán,+51 952414060,Surco,Tienda,2026-01-18,0,0.0,,,,,Prospecto (sin compra),
+C0310,Andrea Castillo,+51 934680072,Callao,Instagram,2025-10-05,1,249.0,282.0,1.0,1.0,2.0,Dormidos,2026-01-23
+C0311,Andrea Vargas,+51 994466574,La Molina,WhatsApp,2026-06-24,0,0.0,,,,,Prospecto (sin compra),
+C0312,Luis Salazar,+51 991085899,San Borja,Instagram,2025-11-25,0,0.0,,,,,Prospecto (sin compra),
+C0313,Milagros Rojas,+51 954544432,San Miguel,Web,2025-10-30,0,0.0,,,,,Prospecto (sin compra),
+C0314,Kevin Salazar,+51 952074466,Lince,Web,2026-07-26,0,0.0,,,,,Prospecto (sin compra),
+C0315,Bruno Ramírez,+51 953875842,Piura,Web,2026-07-13,2,308.0,66.0,4.0,2.0,2.0,Leales,
+C0316,Daniela Chávez,+51 917248251,La Molina,WhatsApp,2026-03-07,0,0.0,,,,,Prospecto (sin compra),
+C0317,Diana Gutiérrez,+51 954947170,Piura,WhatsApp,2026-07-25,1,189.0,39.0,4.0,1.0,1.0,Nuevos,
+C0318,Luis Rojas,+51 973816846,Miraflores,Tienda,2025-12-17,2,398.0,260.0,1.0,2.0,3.0,En riesgo,2026-01-27
+C0319,Mariana Ramírez,+51 956972521,Magdalena,Instagram,2025-12-30,0,0.0,,,,,Prospecto (sin compra),
+C0320,Carla Flores,+51 907432927,Trujillo,Web,2025-11-15,1,211.0,291.0,1.0,1.0,2.0,Dormidos,2025-12-15
+C0321,Mariana Paredes,+51 966676008,La Molina,Web,2025-10-08,3,699.15,332.0,1.0,3.0,4.0,En riesgo,
+C0322,Carla Ramírez,+51 900335421,Lince,WhatsApp,2026-03-06,0,0.0,,,,,Prospecto (sin compra),
+C0323,Daniela Rojas,+51 904478985,Lince,Tienda,2025-12-08,2,358.0,222.0,2.0,2.0,2.0,Leales,2026-02-24
+C0324,Carla Vega,+51 953260332,La Molina,Web,2026-07-29,1,189.0,44.0,4.0,1.0,1.0,Nuevos,
+C0325,Diego Mendoza,+51 915064890,Los Olivos,TikTok,2025-11-25,0,0.0,,,,,Prospecto (sin compra),
+C0326,Jorge Quispe,+51 901676184,Magdalena,Web,2026-01-14,0,0.0,,,,,Prospecto (sin compra),
+C0327,Bruno Quispe,+51 946184992,Lince,Tienda,2025-11-23,0,0.0,,,,,Prospecto (sin compra),
+C0328,Diego García,+51 941173934,Piura,WhatsApp,2026-01-12,1,149.0,227.0,2.0,1.0,1.0,Dormidos,2026-02-14
+C0329,Natalia Paredes,+51 942087375,La Molina,Instagram,2025-11-15,3,488.7,145.0,3.0,3.0,3.0,Campeones,2026-05-15
+C0330,Sofía Vega,+51 921811437,San Borja,Instagram,2025-10-26,1,747.0,327.0,1.0,1.0,4.0,En riesgo,2025-11-10
+C0331,Sofía Mendoza,+51 904556110,Miraflores,Tienda,2026-08-28,2,303.75,5.0,4.0,2.0,2.0,Leales,2026-10-12
+C0332,Daniela Gutiérrez,+51 957941552,San Isidro,WhatsApp,2026-05-22,1,139.0,279.0,1.0,1.0,1.0,Dormidos,
+C0333,Gabriela Salazar,+51 976212021,Lince,Tienda,2026-06-05,0,0.0,,,,,Prospecto (sin compra),
+C0334,Kevin Ríos,+51 929659027,Magdalena,Instagram,2026-04-29,2,355.6,130.0,3.0,2.0,2.0,Leales,2026-05-30
+C0335,Rosa Flores,+51 914508993,Callao,Tienda,2026-06-23,2,378.1,71.0,4.0,2.0,3.0,Leales,2026-07-13
+C0336,Diego García,+51 963756289,Miraflores,Instagram,2025-12-20,0,0.0,,,,,Prospecto (sin compra),
+C0337,Diego Vega,+51 972175354,Miraflores,WhatsApp,2026-07-09,3,951.0,64.0,4.0,3.0,4.0,Campeones,2026-06-09
+C0338,Jorge Salazar,+51 963177971,Piura,WhatsApp,2026-03-11,0,0.0,,,,,Prospecto (sin compra),
+C0339,Sofía Vega,+51 901660880,Piura,Instagram,2026-08-06,1,189.9,36.0,4.0,1.0,1.0,Nuevos,
+C0340,Luis Chávez,+51 988375503,Piura,WhatsApp,2026-07-14,1,199.0,69.0,4.0,1.0,1.0,Nuevos,
+C0341,Andrés Vega,+51 957113055,Piura,WhatsApp,2026-02-27,0,0.0,,,,,Prospecto (sin compra),
+C0342,Carlos Huamán,+51 910272614,Los Olivos,Instagram,2025-12-01,4,661.25,138.0,3.0,4.0,4.0,Campeones,2025-12-30
+C0343,Alejandra Ramírez,+51 973516091,Trujillo,Tienda,2026-05-23,0,0.0,,,,,Prospecto (sin compra),
+C0344,Renzo Torres,+51 970808697,San Miguel,Web,2025-12-30,0,0.0,,,,,Prospecto (sin compra),
+C0345,Bruno Mendoza,+51 921699586,Lince,TikTok,2026-02-05,0,0.0,,,,,Prospecto (sin compra),
+C0346,Gabriela Salazar,+51 954722698,San Borja,Tienda,2026-07-08,1,212.4,69.0,4.0,1.0,2.0,Nuevos,2026-08-09
+C0347,Carla Ramírez,+51 933945228,San Miguel,Web,2026-03-15,1,169.15,171.0,2.0,1.0,1.0,Dormidos,
+C0348,Bruno García,+51 958799684,Piura,WhatsApp,2025-10-07,3,822.0,145.0,3.0,3.0,4.0,Campeones,2026-05-29
+C0349,Diego García,+51 906200342,San Borja,Web,2025-12-14,0,0.0,,,,,Prospecto (sin compra),
+C0350,Camila Chávez,+51 938057198,Piura,Instagram,2026-08-28,0,0.0,,,,,Prospecto (sin compra),
+C0351,Carlos Salazar,+51 938406665,San Miguel,Instagram,2026-02-06,0,0.0,,,,,Prospecto (sin compra),
+C0352,Fernanda Ríos,+51 935989334,Magdalena,Instagram,2025-11-08,1,211.65,308.0,1.0,1.0,2.0,Dormidos,2025-11-29
+C0353,Daniela Mendoza,+51 981606484,Surco,Instagram,2026-02-08,1,402.3,207.0,2.0,1.0,3.0,En riesgo,2026-03-23
+C0354,Valeria Gutiérrez,+51 972025909,Piura,Web,2026-06-09,0,0.0,,,,,Prospecto (sin compra),2026-06-26
+C0355,Kevin Huamán,+51 915832818,Surco,WhatsApp,2026-07-02,0,0.0,,,,,Prospecto (sin compra),
+C0356,Alejandra Rojas,+51 953355543,Trujillo,WhatsApp,2026-06-01,0,0.0,,,,,Prospecto (sin compra),
+C0357,Carlos Quispe,+51 915739930,Callao,Tienda,2026-04-14,2,662.85,154.0,2.0,2.0,4.0,Leales,
+C0358,Kevin García,+51 964840858,Trujillo,WhatsApp,2026-06-07,0,0.0,,,,,Prospecto (sin compra),
+C0359,Camila Chávez,+51 935811288,Miraflores,WhatsApp,2026-01-16,0,0.0,,,,,Prospecto (sin compra),
+C0360,Renzo Ramírez,+51 961386120,Magdalena,Web,2025-10-20,0,0.0,,,,,Prospecto (sin compra),
+C0361,Lucía Rojas,+51 902481934,Lince,WhatsApp,2026-08-19,0,0.0,,,,,Prospecto (sin compra),
+C0362,Alejandra Paredes,+51 950618091,Trujillo,Web,2025-10-24,2,418.15,232.0,2.0,2.0,3.0,Leales,2025-11-28
+C0363,Bruno Rojas,+51 958144914,Trujillo,TikTok,2026-04-14,1,448.0,162.0,2.0,1.0,3.0,En riesgo,
+C0364,Alejandra Quispe,+51 972832684,Callao,Instagram,2026-08-28,0,0.0,,,,,Prospecto (sin compra),
+C0365,Natalia Quispe,+51 988210099,Lince,WhatsApp,2025-11-13,0,0.0,,,,,Prospecto (sin compra),
+C0366,Paola Ramírez,+51 953682223,Los Olivos,Tienda,2026-01-08,1,236.0,241.0,1.0,1.0,2.0,Dormidos,
+C0367,Sofía Mendoza,+51 990878141,San Borja,Instagram,2026-07-25,2,334.15,55.0,4.0,2.0,2.0,Leales,2026-09-06
+C0368,Milagros Gutiérrez,+51 952314913,Jesús María,WhatsApp,2026-03-18,0,0.0,,,,,Prospecto (sin compra),
+C0369,Luis Chávez,+51 992995562,Miraflores,Instagram,2026-01-22,1,159.0,236.0,2.0,1.0,1.0,Dormidos,2026-02-10
+C0370,Bruno Paredes,+51 945257775,Trujillo,Instagram,2026-07-10,1,179.0,143.0,3.0,1.0,1.0,Nuevos,2026-05-18
+C0371,Sofía Mendoza,+51 991428341,Arequipa,Instagram,2025-10-10,1,189.0,145.0,3.0,1.0,1.0,Nuevos,
+C0372,Diego Quispe,+51 999693084,San Miguel,Tienda,2026-07-04,1,249.0,63.0,4.0,1.0,2.0,Nuevos,2026-08-07
+C0373,Milagros Torres,+51 956394278,San Miguel,Instagram,2026-04-05,2,531.0,146.0,3.0,2.0,3.0,Leales,2026-06-05
+C0374,Diego Quispe,+51 939282722,Los Olivos,TikTok,2025-12-14,0,0.0,,,,,Prospecto (sin compra),
+C0375,Miguel Vega,+51 950373145,La Molina,Instagram,2026-01-14,2,1239.0,137.0,3.0,2.0,4.0,Leales,
+C0376,Diego Huamán,+51 967700518,Callao,Tienda,2026-02-12,1,299.0,223.0,2.0,1.0,2.0,Dormidos,2026-03-06
+C0377,José Mendoza,+51 966591846,La Molina,WhatsApp,2026-03-30,2,378.1,157.0,2.0,2.0,3.0,Leales,2026-05-05
+C0378,Natalia Vega,+51 979082723,San Isidro,WhatsApp,2026-02-21,2,371.15,140.0,3.0,2.0,3.0,Leales,2026-04-03
+C0379,Fernanda Torres,+51 922591365,Arequipa,Instagram,2026-06-03,1,159.0,99.0,3.0,1.0,1.0,Nuevos,
+C0380,Milagros Ramírez,+51 992603029,Los Olivos,Instagram,2026-08-19,1,249.0,13.0,4.0,1.0,2.0,Nuevos,
+C0381,Diego Flores,+51 992024286,Los Olivos,TikTok,2026-08-23,1,299.0,12.0,4.0,1.0,2.0,Nuevos,
+C0382,Valeria Chávez,+51 913797723,Piura,WhatsApp,2025-12-13,0,0.0,,,,,Prospecto (sin compra),
+C0383,Kevin Mendoza,+51 998425799,San Isidro,Instagram,2026-04-16,2,373.0,137.0,3.0,2.0,3.0,Leales,
+C0384,Mariana García,+51 903886291,Surco,WhatsApp,2026-08-11,5,1429.2,28.0,4.0,4.0,4.0,Campeones,2026-09-26
+C0385,Luis Flores,+51 988117298,Piura,Instagram,2026-08-29,1,169.0,25.0,4.0,1.0,1.0,Nuevos,2026-09-25
+C0386,Diana Paredes,+51 950863765,Los Olivos,Tienda,2026-07-22,0,0.0,,,,,Prospecto (sin compra),
+C0387,Sofía Paredes,+51 924731498,Lince,Instagram,2025-10-03,1,311.0,332.0,1.0,1.0,2.0,Dormidos,
+C0388,Bruno Quispe,+51 998180635,Lince,WhatsApp,2025-12-19,0,0.0,,,,,Prospecto (sin compra),
+C0389,Diana Vargas,+51 948695946,Trujillo,Instagram,2026-07-10,1,498.0,73.0,4.0,1.0,3.0,Nuevos,2026-08-09
+C0390,Kevin Vega,+51 925887449,Jesús María,Web,2026-04-22,0,0.0,,,,,Prospecto (sin compra),
+C0391,Miguel Torres,+51 913721386,Trujillo,Instagram,2026-07-09,3,878.8,66.0,4.0,3.0,4.0,Campeones,2026-02-18
+C0392,Luis Flores,+51 926012796,San Isidro,Instagram,2026-01-22,1,169.0,231.0,2.0,1.0,1.0,Dormidos,2026-02-24
+C0393,Natalia Rojas,+51 990669849,Miraflores,TikTok,2025-12-29,0,0.0,,,,,Prospecto (sin compra),
+C0394,Jorge Vega,+51 970384309,San Miguel,WhatsApp,2026-01-27,1,159.0,144.0,3.0,1.0,1.0,Nuevos,
+C0395,Luis Mendoza,+51 905302146,Jesús María,Web,2026-04-26,3,540.3,125.0,3.0,3.0,3.0,Campeones,2026-05-28
+C0396,José Ramírez,+51 980118489,Jesús María,Instagram,2026-02-19,2,393.25,194.0,2.0,2.0,3.0,Leales,
+C0397,Andrea Ramírez,+51 976904268,San Isidro,WhatsApp,2026-06-15,1,186.0,94.0,3.0,1.0,1.0,Nuevos,
+C0398,Paola Gutiérrez,+51 918489476,Los Olivos,WhatsApp,2026-02-02,0,0.0,,,,,Prospecto (sin compra),2026-03-07
+C0399,Andrés Gutiérrez,+51 977907141,Lince,WhatsApp,2026-01-21,3,788.0,222.0,2.0,3.0,4.0,Leales,2026-02-24
+C0400,Renzo Castillo,+51 956588043,San Borja,Instagram,2026-03-25,1,186.0,169.0,2.0,1.0,1.0,Dormidos,2026-04-19
+C0401,Lucía Mendoza,+51 975539423,Magdalena,Web,2026-01-29,2,475.35,234.0,2.0,2.0,3.0,Leales,2025-12-17
+C0402,Miguel Castillo,+51 943333952,Trujillo,Instagram,2025-11-10,1,422.0,308.0,1.0,1.0,3.0,En riesgo,
+C0403,Renzo Vega,+51 990807595,Magdalena,Tienda,2026-07-22,2,435.0,56.0,4.0,2.0,3.0,Leales,2026-08-31
+C0404,Gabriela Vega,+51 928463920,San Miguel,Web,2026-06-02,0,0.0,,,,,Prospecto (sin compra),
+C0405,Carlos Flores,+51 985627187,Jesús María,Web,2025-10-07,4,890.9,284.0,1.0,4.0,4.0,En riesgo,2025-12-30
+C0406,Renzo Ramírez,+51 969155942,San Miguel,Instagram,2026-02-15,2,557.55,203.0,2.0,2.0,4.0,Leales,2026-03-10
+C0407,Milagros Gutiérrez,+51 952763655,Piura,WhatsApp,2026-05-19,1,236.0,127.0,3.0,1.0,2.0,Nuevos,2026-06-21
+C0408,Daniela Torres,+51 993143866,La Molina,Instagram,2025-12-16,2,808.65,257.0,1.0,2.0,4.0,En riesgo,2026-01-24
+C0409,Milagros Quispe,+51 926728857,San Borja,Instagram,2026-07-18,1,224.0,46.0,4.0,1.0,2.0,Nuevos,
+C0410,Camila Salazar,+51 912034717,Arequipa,Instagram,2026-04-03,0,0.0,,,,,Prospecto (sin compra),
+C0411,Natalia Vargas,+51 950615939,Los Olivos,WhatsApp,2026-07-03,2,541.9,57.0,4.0,2.0,3.0,Leales,
+C0412,Daniela Chávez,+51 955877169,San Borja,WhatsApp,2025-12-14,2,539.6,283.0,1.0,2.0,3.0,En riesgo,2025-12-20
+C0413,Daniela Gutiérrez,+51 969961125,La Molina,Instagram,2026-08-31,3,591.75,9.0,4.0,3.0,4.0,Campeones,
+C0414,Paola Vargas,+51 996475987,Lince,Instagram,2025-10-12,3,664.9,322.0,1.0,3.0,4.0,En riesgo,2025-12-09
+C0415,Mariana Castillo,+51 941326111,Magdalena,WhatsApp,2025-10-14,1,179.0,222.0,2.0,1.0,1.0,Dormidos,
+C0416,Andrés Salazar,+51 981149216,San Borja,Instagram,2026-02-23,1,201.6,199.0,2.0,1.0,2.0,Dormidos,
+C0417,Rosa Torres,+51 928200557,Magdalena,TikTok,2026-07-04,2,400.65,73.0,4.0,2.0,3.0,Leales,2026-08-18
+C0418,Gabriela Ríos,+51 928299796,San Miguel,WhatsApp,2026-07-01,0,0.0,,,,,Prospecto (sin compra),
+C0419,Paola Huamán,+51 978317456,San Borja,Instagram,2025-10-06,1,249.0,332.0,1.0,1.0,2.0,Dormidos,2025-11-30
+C0420,Valeria Torres,+51 954780774,Miraflores,Web,2026-02-27,0,0.0,,,,,Prospecto (sin compra),
+C0421,Luis Castillo,+51 908536866,La Molina,Instagram,2026-08-27,0,0.0,,,,,Prospecto (sin compra),
+C0422,Alejandra Salazar,+51 934163894,San Borja,WhatsApp,2026-06-30,1,199.0,76.0,4.0,1.0,1.0,Nuevos,2026-07-30
+C0423,Kevin Vargas,+51 963122417,Los Olivos,WhatsApp,2026-08-15,1,199.0,25.0,4.0,1.0,1.0,Nuevos,2026-09-14
+C0424,Milagros Ramírez,+51 950208021,San Borja,Instagram,2026-05-13,3,564.6,108.0,3.0,3.0,4.0,Campeones,2026-06-08
+C0425,Miguel Quispe,+51 931207356,San Borja,Web,2026-06-13,2,355.0,94.0,3.0,2.0,2.0,Leales,2026-07-25
+C0426,Natalia Ríos,+51 905120461,San Miguel,WhatsApp,2026-01-07,2,632.65,240.0,2.0,2.0,4.0,Leales,2026-02-18
+C0427,Gabriela Salazar,+51 901367303,Magdalena,Web,2025-11-18,1,159.0,302.0,1.0,1.0,1.0,Dormidos,
+C0428,Diego Ramírez,+51 976452088,San Isidro,Instagram,2026-08-23,2,1045.3,12.0,4.0,2.0,4.0,Leales,2026-10-11
+C0429,Paola Ramírez,+51 950313650,Surco,Web,2026-07-27,0,0.0,,,,,Prospecto (sin compra),
+C0430,Sofía Salazar,+51 930097925,Trujillo,Instagram,2025-12-20,1,159.0,265.0,1.0,1.0,1.0,Dormidos,2026-01-06
+C0431,Milagros Rojas,+51 995005281,Surco,WhatsApp,2026-03-12,0,0.0,,,,,Prospecto (sin compra),2026-04-04
+C0432,Carlos Huamán,+51 973065240,Magdalena,Web,2026-07-14,3,572.0,60.0,4.0,3.0,4.0,Campeones,2026-08-27
+C0433,Paola Vega,+51 939285574,Piura,Tienda,2026-07-11,2,497.1,58.0,4.0,2.0,3.0,Leales,
+C0434,Daniela Rojas,+51 982744857,Miraflores,Web,2026-06-17,2,460.0,77.0,4.0,2.0,3.0,Leales,2026-07-28
+C0435,Alejandra Mendoza,+51 909593518,Piura,WhatsApp,2026-06-26,2,551.3,65.0,4.0,2.0,3.0,Leales,
+C0436,Renzo Vega,+51 982945651,San Isidro,WhatsApp,2025-11-04,3,517.9,230.0,2.0,3.0,3.0,Leales,2026-02-15
+C0437,Camila Torres,+51 920317310,Los Olivos,WhatsApp,2026-04-17,1,161.1,146.0,3.0,1.0,1.0,Nuevos,
+C0438,Renzo Vega,+51 989940539,Arequipa,Instagram,2026-01-15,3,1502.1,138.0,3.0,3.0,4.0,Campeones,2026-06-01
+C0439,Jorge Vega,+51 917058650,Piura,WhatsApp,2026-06-28,0,0.0,,,,,Prospecto (sin compra),
+C0440,Camila Rojas,+51 941381138,Lince,Instagram,2026-06-27,4,670.25,77.0,4.0,4.0,4.0,Campeones,2026-07-19
+C0441,Renzo Castillo,+51 992886195,Callao,WhatsApp,2026-05-07,2,338.1,118.0,3.0,2.0,2.0,Leales,2026-06-30
+C0442,Sofía Mendoza,+51 928685289,Magdalena,TikTok,2026-03-11,3,1173.2,187.0,2.0,3.0,4.0,Leales,2026-03-26
+C0443,Carlos Gutiérrez,+51 956659398,La Molina,WhatsApp,2026-07-09,2,512.6,65.0,4.0,2.0,3.0,Leales,2026-08-12
+C0444,Miguel Vargas,+51 957760049,Miraflores,WhatsApp,2026-03-04,0,0.0,,,,,Prospecto (sin compra),
+C0445,Valeria Chávez,+51 933504888,Los Olivos,TikTok,2025-12-19,3,430.4,224.0,2.0,3.0,3.0,Leales,2026-01-02
+C0446,Sofía Flores,+51 975224593,La Molina,Instagram,2026-03-03,0,0.0,,,,,Prospecto (sin compra),
+C0447,Lucía Salazar,+51 993157279,Piura,Tienda,2026-08-01,1,211.0,43.0,4.0,1.0,2.0,Nuevos,2026-09-14
+C0448,Jorge Chávez,+51 909610556,Lince,TikTok,2025-12-01,4,905.3,274.0,1.0,4.0,4.0,En riesgo,2026-01-03
+C0449,Andrés Castillo,+51 990604805,San Miguel,WhatsApp,2026-03-17,0,0.0,,,,,Prospecto (sin compra),
+C0450,Diego Castillo,+51 920679981,La Molina,WhatsApp,2026-04-20,0,0.0,,,,,Prospecto (sin compra),
+C0451,Mariana Torres,+51 951790864,San Isidro,WhatsApp,2026-05-11,4,756.0,111.0,3.0,4.0,4.0,Campeones,2026-05-29
+C0452,Andrés Torres,+51 927837693,San Miguel,WhatsApp,2026-06-26,1,189.9,81.0,4.0,1.0,1.0,Nuevos,2026-07-20
+C0453,Andrea Castillo,+51 914659116,Lince,WhatsApp,2026-01-06,1,169.0,257.0,1.0,1.0,1.0,Dormidos,
+C0454,Carla Huamán,+51 990425979,Surco,WhatsApp,2026-01-28,4,616.0,216.0,2.0,4.0,4.0,Leales,2026-03-25
+C0455,Fernanda Huamán,+51 921103924,Miraflores,Instagram,2025-11-26,1,249.0,301.0,1.0,1.0,2.0,Dormidos,2025-12-21
+C0456,Paola Ríos,+51 970538338,San Miguel,Web,2026-07-08,3,608.05,66.0,4.0,3.0,4.0,Campeones,
+C0457,Milagros Torres,+51 906980420,San Borja,Instagram,2026-08-13,2,293.1,24.0,4.0,2.0,2.0,Leales,
+C0458,Gabriela Flores,+51 970164510,San Borja,Tienda,2026-08-29,2,559.65,12.0,4.0,2.0,4.0,Leales,2026-09-22
+C0459,Alejandra Castillo,+51 968157981,Surco,Instagram,2026-05-23,1,199.0,102.0,3.0,1.0,1.0,Nuevos,
+C0460,Carlos Quispe,+51 903845762,Miraflores,Instagram,2026-03-30,1,149.0,169.0,2.0,1.0,1.0,Dormidos,
+C0461,Natalia Chávez,+51 938404608,San Borja,Instagram,2026-03-24,1,170.1,168.0,2.0,1.0,1.0,Dormidos,2026-04-28
+C0462,Alejandra Torres,+51 916893639,Surco,WhatsApp,2026-03-09,0,0.0,,,,,Prospecto (sin compra),
+C0463,Luis Gutiérrez,+51 978232983,Piura,Instagram,2026-06-26,1,149.0,70.0,4.0,1.0,1.0,Nuevos,
+C0464,Mariana Paredes,+51 929251881,Surco,Instagram,2025-12-14,1,135.15,265.0,1.0,1.0,1.0,Dormidos,
+C0465,Miguel Quispe,+51 956647423,San Isidro,Instagram,2025-10-14,1,135.15,326.0,1.0,1.0,1.0,Dormidos,
+C0466,Andrés Vargas,+51 999939330,Jesús María,Instagram,2026-06-02,2,772.0,108.0,3.0,2.0,4.0,Leales,
+C0467,Mariana Vega,+51 952677223,La Molina,Instagram,2025-10-08,0,0.0,,,,,Prospecto (sin compra),
+C0468,Gabriela Paredes,+51 933312797,Arequipa,Instagram,2026-05-23,1,179.1,105.0,3.0,1.0,1.0,Nuevos,
+C0469,Andrea Paredes,+51 960965699,Los Olivos,WhatsApp,2026-08-25,0,0.0,,,,,Prospecto (sin compra),
+C0470,Bruno Flores,+51 981770388,Lince,TikTok,2025-10-21,0,0.0,,,,,Prospecto (sin compra),
+C0471,Carlos Salazar,+51 980347644,Magdalena,Instagram,2026-02-28,1,125.1,188.0,2.0,1.0,1.0,Dormidos,
+C0472,Luis Flores,+51 982771812,Trujillo,WhatsApp,2026-07-07,0,0.0,,,,,Prospecto (sin compra),
+C0473,Mariana Salazar,+51 965702793,Magdalena,Instagram,2026-03-15,0,0.0,,,,,Prospecto (sin compra),
+C0474,Bruno Mendoza,+51 911175186,Arequipa,Web,2026-06-19,0,0.0,,,,,Prospecto (sin compra),
+C0475,Luis Mendoza,+51 968602592,Surco,Tienda,2025-12-31,3,727.1,244.0,1.0,3.0,4.0,En riesgo,2026-02-06
+C0476,Andrés Flores,+51 964474212,La Molina,Instagram,2026-02-07,1,448.0,211.0,2.0,1.0,3.0,En riesgo,
+C0477,Valeria Ríos,+51 977809733,Los Olivos,Web,2026-05-21,0,0.0,,,,,Prospecto (sin compra),
+C0478,Diana Ríos,+51 919903849,Callao,WhatsApp,2026-01-15,2,518.1,240.0,2.0,2.0,3.0,Leales,2026-02-17
+C0479,Camila Mendoza,+51 920502099,San Borja,Instagram,2025-11-14,2,438.0,291.0,1.0,2.0,3.0,En riesgo,2025-12-25
+C0480,Camila García,+51 962249998,Surco,TikTok,2026-07-24,0,0.0,,,,,Prospecto (sin compra),
+C0481,Natalia Flores,+51 914556168,San Isidro,Instagram,2025-12-08,1,358.2,278.0,1.0,1.0,3.0,En riesgo,
+C0482,Sofía Vargas,+51 958683390,San Isidro,WhatsApp,2026-08-19,4,987.15,11.0,4.0,4.0,4.0,Campeones,2026-10-21
+C0483,Diego Rojas,+51 979469548,Los Olivos,TikTok,2026-03-31,1,336.6,155.0,2.0,1.0,2.0,Dormidos,2026-05-04
+C0484,Mariana Vega,+51 987729343,Miraflores,Instagram,2026-05-27,0,0.0,,,,,Prospecto (sin compra),
+C0485,Jorge García,+51 939660558,Trujillo,WhatsApp,2025-10-06,1,299.0,329.0,1.0,1.0,2.0,Dormidos,
+C0486,Jorge Ramírez,+51 944144885,Trujillo,Instagram,2026-03-20,0,0.0,,,,,Prospecto (sin compra),
+C0487,Carla Salazar,+51 999023557,Magdalena,Web,2026-08-27,0,0.0,,,,,Prospecto (sin compra),
+C0488,Mariana Vega,+51 927857608,San Borja,WhatsApp,2026-03-11,0,0.0,,,,,Prospecto (sin compra),
+C0489,Carlos Quispe,+51 939551240,Jesús María,TikTok,2026-08-17,2,641.0,35.0,4.0,2.0,4.0,Leales,2026-03-16
+C0490,Carlos Mendoza,+51 999629145,Arequipa,Instagram,2026-04-30,2,517.0,142.0,3.0,2.0,3.0,Leales,2026-05-15
+C0491,Lucía Vega,+51 935743842,San Isidro,WhatsApp,2025-10-20,1,159.0,323.0,1.0,1.0,1.0,Dormidos,2025-12-04
+C0492,Andrés Ramírez,+51 917807823,Jesús María,TikTok,2026-06-26,3,1468.9,70.0,4.0,3.0,4.0,Campeones,2026-07-20
+C0493,Paola Gutiérrez,+51 921823076,Arequipa,Tienda,2025-11-29,0,0.0,,,,,Prospecto (sin compra),
+C0494,Valeria Chávez,+51 909157018,Trujillo,Web,2026-03-09,1,374.0,191.0,2.0,1.0,3.0,En riesgo,
+C0495,Valeria Chávez,+51 935334485,Trujillo,WhatsApp,2025-11-30,0,0.0,,,,,Prospecto (sin compra),
+C0496,Gabriela Torres,+51 924109881,La Molina,WhatsApp,2026-07-09,2,1195.0,53.0,4.0,2.0,4.0,Leales,
+C0497,Carla Vargas,+51 924932149,Jesús María,WhatsApp,2025-10-26,0,0.0,,,,,Prospecto (sin compra),
+C0498,Mariana Quispe,+51 970160166,Surco,Web,2026-07-31,0,0.0,,,,,Prospecto (sin compra),
+C0499,Jorge Ríos,+51 995453817,Los Olivos,Instagram,2026-05-28,2,338.1,99.0,3.0,2.0,2.0,Leales,2026-06-22
+C0500,Sofía Ríos,+51 947733294,Jesús María,WhatsApp,2026-03-19,1,224.0,174.0,2.0,1.0,2.0,Dormidos,
+C0501,Kevin Gutiérrez,+51 977017157,Magdalena,Tienda,2026-02-22,1,126.65,138.0,3.0,1.0,1.0,Nuevos,
+C0502,Andrés Huamán,+51 999281615,San Miguel,WhatsApp,2026-03-04,2,889.1,143.0,3.0,2.0,4.0,Leales,
+C0503,Carlos Ríos,+51 969639382,Magdalena,WhatsApp,2026-03-24,2,603.45,167.0,2.0,2.0,4.0,Leales,2026-04-30
+C0504,Fernanda Paredes,+51 969583219,Piura,WhatsApp,2026-07-31,3,697.1,29.0,4.0,3.0,4.0,Campeones,2026-09-23
+C0505,Luis Ríos,+51 958172461,Los Olivos,Instagram,2026-08-02,0,0.0,,,,,Prospecto (sin compra),
+C0506,Andrés Salazar,+51 957013290,Trujillo,Instagram,2025-12-16,1,236.3,280.0,1.0,1.0,2.0,Dormidos,
+C0507,Rosa Chávez,+51 969973354,Los Olivos,Web,2026-03-05,4,791.0,188.0,2.0,4.0,4.0,Leales,2026-04-14
+C0508,Diana Huamán,+51 919098624,Miraflores,WhatsApp,2026-07-09,0,0.0,,,,,Prospecto (sin compra),2026-08-09
+C0509,Camila Quispe,+51 985140369,Lince,WhatsApp,2026-04-14,0,0.0,,,,,Prospecto (sin compra),
+C0510,Alejandra Salazar,+51 968327238,Lince,Tienda,2026-04-03,1,249.0,152.0,2.0,1.0,2.0,Dormidos,
+C0511,Diana Torres,+51 942201027,Callao,WhatsApp,2025-12-09,0,0.0,,,,,Prospecto (sin compra),
+C0512,Lucía Torres,+51 967969278,Lince,WhatsApp,2026-05-19,2,333.0,119.0,3.0,2.0,2.0,Leales,2026-07-03
+C0513,Alejandra Huamán,+51 932690973,Arequipa,WhatsApp,2026-04-29,2,627.1,123.0,3.0,2.0,4.0,Leales,2026-06-23
+C0514,Carlos Huamán,+51 900975197,Arequipa,Instagram,2026-06-27,1,189.0,69.0,4.0,1.0,1.0,Nuevos,
+C0515,Andrés Vargas,+51 978189137,Callao,Web,2025-11-09,1,498.0,313.0,1.0,1.0,3.0,En riesgo,2025-11-20
+C0516,Renzo Chávez,+51 990580778,Magdalena,WhatsApp,2026-03-19,1,189.0,183.0,2.0,1.0,1.0,Dormidos,2026-04-29
+C0517,Diana Huamán,+51 944209494,Miraflores,WhatsApp,2026-07-24,0,0.0,,,,,Prospecto (sin compra),
+C0518,Daniela Flores,+51 949047128,San Isidro,Tienda,2026-02-20,2,423.0,210.0,2.0,2.0,3.0,Leales,2026-02-24
+C0519,Gabriela Torres,+51 994440192,Los Olivos,Web,2026-05-17,0,0.0,,,,,Prospecto (sin compra),2026-06-24
+C0520,Natalia Mendoza,+51 943728051,Surco,WhatsApp,2025-12-18,1,269.1,281.0,1.0,1.0,2.0,Dormidos,2026-01-10
+C0521,Milagros Paredes,+51 963723950,Callao,Instagram,2025-11-29,1,135.15,280.0,1.0,1.0,1.0,Dormidos,2025-12-28
+C0522,Camila Mendoza,+51 976747836,Callao,Web,2026-05-31,2,345.0,111.0,3.0,2.0,2.0,Leales,
+C0523,Gabriela Torres,+51 986047658,Callao,TikTok,2025-11-19,0,0.0,,,,,Prospecto (sin compra),
+C0524,Carlos Huamán,+51 969454414,Callao,WhatsApp,2026-05-25,1,249.0,108.0,3.0,1.0,2.0,Nuevos,
+C0525,Andrés Castillo,+51 993852580,Callao,Instagram,2025-11-04,1,443.7,323.0,1.0,1.0,3.0,En riesgo,
+C0526,Valeria Paredes,+51 918175344,La Molina,Instagram,2026-08-14,4,892.25,16.0,4.0,4.0,4.0,Campeones,2026-09-13
+C0527,Lucía Flores,+51 993911192,Lince,Web,2026-08-28,2,587.0,7.0,4.0,2.0,4.0,Leales,2026-10-12
+C0528,José Mendoza,+51 912447174,Trujillo,WhatsApp,2026-03-15,1,199.0,177.0,2.0,1.0,1.0,Dormidos,
+C0529,Gabriela Mendoza,+51 914066504,Piura,Instagram,2026-05-14,1,169.0,115.0,3.0,1.0,1.0,Nuevos,2026-06-12
+C0530,Lucía Vega,+51 939627128,Trujillo,WhatsApp,2026-08-11,0,0.0,,,,,Prospecto (sin compra),
+C0531,Jorge García,+51 974101194,Trujillo,WhatsApp,2026-06-12,2,405.0,88.0,3.0,2.0,3.0,Leales,
+C0532,Mariana Quispe,+51 906425690,San Miguel,Web,2026-06-09,2,504.0,92.0,3.0,2.0,3.0,Leales,2026-07-25
+C0533,Milagros Paredes,+51 961830671,Los Olivos,WhatsApp,2026-04-02,1,199.0,149.0,2.0,1.0,1.0,Dormidos,
+C0534,Carla Chávez,+51 960158517,Trujillo,Web,2026-08-28,1,139.0,20.0,4.0,1.0,1.0,Nuevos,2026-10-08
+C0535,Fernanda Mendoza,+51 980634615,Magdalena,Instagram,2026-08-20,4,686.2,14.0,4.0,4.0,4.0,Campeones,
+C0536,Rosa Ramírez,+51 920309376,San Isidro,Web,2026-08-26,0,0.0,,,,,Prospecto (sin compra),
+C0537,Paola Vega,+51 987005050,Lince,Instagram,2026-08-31,0,0.0,,,,,Prospecto (sin compra),
+C0538,Renzo Ríos,+51 982931027,Callao,Instagram,2026-08-13,0,0.0,,,,,Prospecto (sin compra),
+C0539,Camila Castillo,+51 920204179,Surco,Tienda,2025-11-02,0,0.0,,,,,Prospecto (sin compra),
+C0540,Sofía García,+51 979931365,Trujillo,Tienda,2026-04-24,0,0.0,,,,,Prospecto (sin compra),
+C0541,Carla García,+51 998253092,Jesús María,Instagram,2026-02-18,4,781.15,200.0,2.0,4.0,4.0,Leales,2026-04-08
+C0542,Mariana Paredes,+51 925827390,Surco,Instagram,2026-08-20,1,149.0,32.0,4.0,1.0,1.0,Nuevos,
+C0543,Luis Salazar,+51 920710021,Arequipa,Web,2026-02-23,1,159.0,194.0,2.0,1.0,1.0,Dormidos,
+C0544,Diana Vega,+51 923248763,Surco,WhatsApp,2025-10-20,2,485.0,337.0,1.0,2.0,3.0,En riesgo,
+C0545,Luis Mendoza,+51 979145608,La Molina,Instagram,2026-06-29,2,680.85,74.0,4.0,2.0,4.0,Leales,2026-05-29
+C0546,Sofía Huamán,+51 988373403,San Isidro,Web,2026-05-31,0,0.0,,,,,Prospecto (sin compra),
+C0547,Milagros Mendoza,+51 920054364,Jesús María,WhatsApp,2026-05-21,1,807.3,118.0,3.0,1.0,4.0,Nuevos,2026-06-30
+C0548,Camila García,+51 908220781,San Isidro,Tienda,2026-05-16,2,396.9,123.0,3.0,2.0,3.0,Leales,2026-06-05
+C0549,José Gutiérrez,+51 963531531,La Molina,Web,2026-01-11,1,212.4,247.0,1.0,1.0,2.0,Dormidos,2026-02-20
+C0550,Alejandra Castillo,+51 917970623,Los Olivos,WhatsApp,2026-04-17,1,186.0,158.0,2.0,1.0,1.0,Dormidos,2026-04-29
+C0551,Natalia Torres,+51 973543520,Arequipa,WhatsApp,2026-02-21,0,0.0,,,,,Prospecto (sin compra),2026-04-02
+C0552,Mariana García,+51 977625349,Surco,Web,2026-08-23,0,0.0,,,,,Prospecto (sin compra),
+C0553,Luis Mendoza,+51 998316873,Los Olivos,WhatsApp,2026-05-25,0,0.0,,,,,Prospecto (sin compra),
+C0554,Gabriela Quispe,+51 963356939,Surco,Tienda,2025-10-03,1,212.4,345.0,1.0,1.0,2.0,Dormidos,
+C0555,Diana Flores,+51 907806867,Trujillo,Web,2025-11-20,1,398.0,277.0,1.0,1.0,3.0,En riesgo,2025-12-30
+C0556,Rosa Vega,+51 931806325,San Borja,Instagram,2025-11-16,3,846.3,295.0,1.0,3.0,4.0,En riesgo,2025-12-17
+C0557,Valeria Vega,+51 942799077,Trujillo,Instagram,2026-04-26,2,533.0,148.0,3.0,2.0,3.0,Leales,
+C0558,Daniela Huamán,+51 970165804,Lince,Web,2026-08-10,2,448.0,24.0,4.0,2.0,3.0,Leales,2026-01-13
+C0559,Carlos Ramírez,+51 919508501,Lince,WhatsApp,2026-08-13,0,0.0,,,,,Prospecto (sin compra),
+C0560,Camila Huamán,+51 952818325,La Molina,WhatsApp,2026-08-29,1,270.3,6.0,4.0,1.0,2.0,Nuevos,2026-10-04
+C0561,Milagros Ramírez,+51 935548640,San Isidro,WhatsApp,2026-05-20,4,975.0,103.0,3.0,4.0,4.0,Campeones,2026-06-23
+C0562,Milagros García,+51 978847951,La Molina,Tienda,2026-05-23,1,316.2,101.0,3.0,1.0,2.0,Nuevos,2026-07-14
+C0563,Lucía Rojas,+51 962411241,Arequipa,Instagram,2025-12-17,2,293.1,273.0,1.0,2.0,2.0,En riesgo,2026-01-04
+C0564,Fernanda Quispe,+51 946827567,Arequipa,WhatsApp,2026-02-27,0,0.0,,,,,Prospecto (sin compra),
+C0565,Fernanda Rojas,+51 903856955,Magdalena,WhatsApp,2026-06-29,0,0.0,,,,,Prospecto (sin compra),
+C0566,Carlos Ríos,+51 974924243,Magdalena,WhatsApp,2026-02-25,1,179.1,201.0,2.0,1.0,1.0,Dormidos,2026-04-04
+C0567,Andrés Flores,+51 925472928,San Borja,Instagram,2025-12-29,3,721.85,142.0,3.0,3.0,4.0,Campeones,2026-05-30
+C0568,Bruno Torres,+51 923105927,San Borja,WhatsApp,2026-01-14,3,541.05,226.0,2.0,3.0,3.0,Leales,
+C0569,Carlos Flores,+51 955257828,San Borja,Instagram,2025-10-13,1,336.6,333.0,1.0,1.0,2.0,Dormidos,2025-11-14
+C0570,Alejandra Vega,+51 927520885,Callao,Web,2026-05-31,1,159.0,102.0,3.0,1.0,1.0,Nuevos,
+C0571,Paola Torres,+51 997517028,San Isidro,Instagram,2026-04-24,2,519.3,139.0,3.0,2.0,3.0,Leales,2026-06-07
+C0572,Luis Castillo,+51 975150939,San Miguel,Instagram,2026-02-20,2,388.0,230.0,2.0,2.0,3.0,Leales,
+C0573,Fernanda Quispe,+51 918718637,Jesús María,WhatsApp,2026-06-19,0,0.0,,,,,Prospecto (sin compra),
+C0574,Camila Huamán,+51 962656504,Jesús María,WhatsApp,2026-05-17,1,249.0,114.0,3.0,1.0,2.0,Nuevos,
+C0575,Carlos Rojas,+51 937674266,Surco,Tienda,2026-08-03,1,199.0,275.0,1.0,1.0,1.0,Dormidos,
+C0576,Lucía Torres,+51 934785196,San Isidro,Instagram,2026-08-24,2,367.1,5.0,4.0,2.0,3.0,Leales,2026-10-16
+C0577,Gabriela Paredes,+51 928792326,San Borja,WhatsApp,2025-10-22,2,510.0,316.0,1.0,2.0,3.0,En riesgo,
+C0578,Paola Chávez,+51 978730024,San Borja,TikTok,2026-08-22,1,211.65,21.0,4.0,1.0,2.0,Nuevos,
+C0579,Milagros García,+51 946273014,Magdalena,TikTok,2025-11-04,1,199.0,138.0,3.0,1.0,1.0,Nuevos,
+C0580,Luis Huamán,+51 997964715,San Miguel,Web,2025-10-09,0,0.0,,,,,Prospecto (sin compra),
+C0581,Gabriela Mendoza,+51 990257252,Miraflores,Instagram,2026-05-03,1,125.1,139.0,3.0,1.0,1.0,Nuevos,2026-06-09
+C0582,Jorge Huamán,+51 904481832,Trujillo,Instagram,2025-12-25,1,169.0,268.0,1.0,1.0,1.0,Dormidos,2026-01-16
+C0583,Carlos Gutiérrez,+51 954451895,Piura,Instagram,2025-12-10,3,532.0,265.0,1.0,3.0,3.0,En riesgo,2026-01-22
+C0584,Diego Chávez,+51 957652132,San Miguel,Instagram,2026-01-05,1,249.0,241.0,1.0,1.0,2.0,Dormidos,2026-02-17
+C0585,Kevin García,+51 967112075,San Borja,Web,2025-12-11,3,930.0,226.0,2.0,3.0,4.0,Leales,
+C0586,Rosa Gutiérrez,+51 924013223,San Borja,Instagram,2025-12-06,1,211.0,280.0,1.0,1.0,2.0,Dormidos,2026-01-18
+C0587,Lucía Paredes,+51 911076031,Miraflores,Web,2026-06-20,1,179.1,71.0,4.0,1.0,1.0,Nuevos,2026-07-24
+C0588,José Flores,+51 971401401,Trujillo,Instagram,2026-08-05,0,0.0,,,,,Prospecto (sin compra),
+C0589,Fernanda Ramírez,+51 925012495,Jesús María,Instagram,2026-06-14,1,212.4,87.0,3.0,1.0,2.0,Nuevos,
+C0590,Andrés Castillo,+51 989119083,Arequipa,Instagram,2026-02-22,2,481.1,193.0,2.0,2.0,3.0,Leales,2026-04-08
+C0591,Daniela Quispe,+51 913875927,Callao,TikTok,2026-01-01,0,0.0,,,,,Prospecto (sin compra),2026-02-03
+C0592,Natalia Salazar,+51 963836151,Magdalena,Instagram,2025-12-09,1,169.0,274.0,1.0,1.0,1.0,Dormidos,2026-01-06
+C0593,Milagros Huamán,+51 948015716,San Borja,WhatsApp,2026-03-09,1,143.65,195.0,2.0,1.0,1.0,Dormidos,2026-03-31
+C0594,Renzo Ríos,+51 938646317,Callao,WhatsApp,2025-10-07,0,0.0,,,,,Prospecto (sin compra),
+C0595,Renzo Vega,+51 916781126,Lince,Web,2025-11-22,1,224.0,289.0,1.0,1.0,2.0,Dormidos,2025-12-21
+C0596,Miguel Mendoza,+51 915353961,La Molina,Tienda,2026-06-13,1,311.0,97.0,3.0,1.0,2.0,Nuevos,
+C0597,Gabriela Vargas,+51 965796784,Surco,Web,2025-11-25,1,186.0,284.0,1.0,1.0,1.0,Dormidos,2026-01-04
+C0598,Sofía Vargas,+51 977320101,Magdalena,Web,2025-12-31,2,549.0,253.0,1.0,2.0,3.0,En riesgo,
+C0599,Alejandra Gutiérrez,+51 924991187,Trujillo,WhatsApp,2026-02-28,1,199.0,188.0,2.0,1.0,2.0,Dormidos,2026-03-26
+C0600,Renzo Vega,+51 978485880,Trujillo,Instagram,2026-05-09,2,370.65,125.0,3.0,2.0,3.0,Leales,2026-06-05
