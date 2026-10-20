@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joyería: portafolio de Yosseline</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<style>body{margin:0}
+/* Layout: columna editorial de 960px; cada reto del puesto es un capítulo con hallazgo → evidencia → acción */
+:root{
+  --bg:#FCF3F5; --surface:#FFFFFF; --ink:#2B1A23; --ink-2:#5E4651; --muted:#8C7380; --line:#F0D9E0;
+  --gold:#C2416C; --gold-soft:#FBE0E9; --silver:#B98A9C;
+  --good:#2F7D4F; --warn:#A8620B; --bad:#B23A2E;
+  --f-display:"Cormorant Garamond","Garamond","Georgia",serif;
+  --f-body:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1C1217; --surface:#26181F; --ink:#F7E9EE; --ink-2:#D9BFCA; --muted:#A88B98; --line:#3D2730;
+  --gold:#F08AAE; --gold-soft:#4A2533; --silver:#C79AAB; --good:#5DBB84; --warn:#E3A248; --bad:#EE7A6C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1C1217; --surface:#26181F; --ink:#F7E9EE; --ink-2:#D9BFCA; --muted:#A88B98; --line:#3D2730;
+  --gold:#F08AAE; --gold-soft:#4A2533; --silver:#C79AAB; --good:#5DBB84; --warn:#E3A248; --bad:#EE7A6C; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 15px/1.6 var(--f-body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+.wrap{max-width:960px;margin:0 auto}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:clamp(34px,6vw,56px);letter-spacing:-.01em}
+h2{font-size:clamp(26px,4vw,36px)}
+h3{font-family:var(--f-body);font-weight:600;font-size:16px}
+p{margin:0;max-width:66ch}
+.eyebrow{font:600 13px/1 var(--f-body);color:var(--gold)}
+.muted{color:var(--muted)} .ink2{color:var(--ink-2)}
+.num{font-variant-numeric:tabular-nums}
+header.hero{padding-block:56px 32px;display:grid;gap:18px;border-bottom:1px solid var(--line)}
+.hero .lead{font-size:18px;color:var(--ink-2)}
+.engrave{font-family:var(--f-mono);letter-spacing:.18em;color:var(--silver);font-size:13px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:500}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;padding-block:20px}
+nav.toc a{font:500 13px var(--f-body);color:var(--ink);text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:999px;background:var(--surface)}
+nav.toc a:hover,nav.toc a:focus-visible{border-color:var(--gold);outline:none}
+section{padding-block:44px;border-bottom:1px solid var(--line);display:grid;gap:24px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.kpi{background:var(--surface);padding:16px;display:grid;gap:4px;align-content:start}
+.kpi .v{white-space:nowrap;font:700 28px/1.1 var(--f-display);font-variant-numeric:tabular-nums}
+.kpi .l{font-size:12px;color:var(--muted)}
+.pill{display:inline-flex;align-items:center;gap:6px;font:500 11px/1 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;padding:4px 8px;border-radius:999px;border:1px solid currentColor;width:max-content}
+.pill.bad{color:var(--bad)} .pill.good{color:var(--good)} .pill.warn{color:var(--warn)}
+.findings{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.finding{display:grid;gap:8px;align-content:start;padding:18px;background:var(--surface);border-radius:14px;border:1px solid var(--line)}
+.finding .big{font:700 40px/1 var(--f-display);color:var(--gold)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;display:grid;gap:12px;min-width:0}
+.chart{position:relative;width:100%}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart text{font:11px var(--f-mono);fill:var(--muted)}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);font:12px/1.4 var(--f-body);padding:6px 8px;border-radius:4px;white-space:nowrap;transform:translate(-50%,-110%)}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font:500 11px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
+.bar-inline{display:inline-block;height:6px;background:var(--gold);border-radius:0 3px 3px 0;vertical-align:middle;margin-left:8px}
+.stages{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px}
+.stage{background:var(--surface);border:1px solid var(--line);padding:6px 10px;border-radius:4px}
+.stage.key{border-color:var(--gold);background:var(--gold-soft)}
+.arrow{color:var(--muted)}
+.flow{display:grid;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.flow .steps{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.flow .step{font:12px var(--f-mono);border:1px solid var(--line);padding:5px 9px;border-radius:4px;background:var(--bg)}
+.flow .why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;font-size:14px}
+.flow .why div{display:grid;gap:2px} .flow .why b{font:500 11px var(--f-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+pre{margin:0;background:var(--bg);border:1px solid var(--line);padding:12px;overflow-x:auto;font:12px/1.5 var(--f-mono);color:var(--ink-2)}
+.plan{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.plan>div{display:grid;gap:8px;align-content:start;padding:16px;border:1px solid var(--line);background:var(--surface)}
+.plan ul,.files ul{margin:0;padding-left:18px;display:grid;gap:4px;font-size:14px}
+.plan .d{font:500 22px var(--f-display);color:var(--gold)}
+.note{font-size:13px;color:var(--muted);border-left:2px solid var(--line);padding-left:12px}
+footer{padding-block:32px;display:grid;gap:8px;font-size:13px;color:var(--muted)}
+code{font-family:var(--f-mono);font-size:.92em}
+@media (prefers-reduced-motion:no-preference){.chart rect.m,.chart circle.m{transition:opacity .15s}}
+</style>
+
+<div class="wrap">
+<header class="hero">
+  <span class="eyebrow">Mi proyecto de portafolio</span>
+  <h1>Joyería personalizada: del dato a la automatización</h1>
+  <p class="lead">Trabajé con los datos de un año de una tienda de joyas grabadas en plata 925 y baño de oro 18K. Me hice tres preguntas: cómo ordenar a los clientes, qué números revisar cada semana y qué tareas repetitivas se podrían automatizar.</p>
+  <div class="meta">
+    <span>Autora <b>Yosseline</b> · Ing. de Sistemas, 6.º ciclo, UCV</span>
+    <span>Periodo <b class="num" id="periodo"></b></span>
+    <span>Base <b class="num">600 clientes · 20 productos · 800 pedidos · 1 500 consultas</b></span>
+    <span>Herramientas <b>Python (pandas) · n8n · Google Sheets · WhatsApp Cloud API</b></span>
+  </div>
+  <p class="note">La base es un conjunto de datos de práctica que simula la operación de una joyería. Las cifras sirven para mostrar el método; con datos reales cambian los números, pero el proceso es el mismo.</p>
+</header>
+
+<nav class="toc" aria-label="Secciones">
+  <a href="#resumen">Resumen</a><a href="#metricas">Métricas</a><a href="#crm">CRM</a><a href="#automatizacion">Automatizaciones</a><a href="#keyuser">Key User</a><a href="#metodo">Cómo lo hice</a>
+</nav>
+
+<section id="resumen">
+  <span class="eyebrow">Lo más importante</span>
+  <h2>La tienda vende bien, pero muchos pedidos llegan tarde</h2>
+  <div class="kpis" id="kpis"></div>
+  <div class="findings">
+    <div class="finding">
+      <span class="pill bad">Crítico</span>
+      <span class="big num" id="f-otif"></span>
+      <h3>de los pedidos llega en la fecha prometida</h3>
+      <p class="ink2" id="f-otif-t"></p>
+    </div>
+    <div class="finding">
+      <span class="pill warn">Oportunidad</span>
+      <span class="big num" id="f-rec"></span>
+      <h3>de las ventas viene de clientes que repiten</h3>
+      <p class="ink2" id="f-rec-t"></p>
+    </div>
+    <div class="finding">
+      <span class="pill warn">Calidad</span>
+      <span class="big num" id="f-err"></span>
+      <h3>de los grabados tiene error</h3>
+      <p class="ink2" id="f-err-t"></p>
+    </div>
+  </div>
+</section>
+
+<section id="metricas">
+  <span class="eyebrow">Métricas</span>
+  <h2>Qué revisaría cada semana</h2>
+  <p class="ink2">Propongo un tablero corto con cuatro indicadores que el equipo pueda revisar en diez minutos. Ventas y margen dicen si el negocio crece. Puntualidad de entrega (OTIF), error de grabado y conversión de consultas dicen dónde se pierde dinero.</p>
+  <div class="grid2">
+    <div class="panel">
+      <h3>Ventas netas por mes (S/)</h3>
+      <p class="muted" style="font-size:13px">Los picos coinciden con Navidad, San Valentín y Día de la Madre. Esos meses requieren planificar la capacidad del taller con anticipación.</p>
+      <div class="chart" id="ch-ventas"></div>
+    </div>
+    <div class="panel">
+      <h3>Pedidos a tiempo según días de producción</h3>
+      <p class="muted" style="font-size:13px" id="otif-dias-t"></p>
+      <div class="chart" id="ch-otif"></div>
+    </div>
+  </div>
+  <div class="grid2">
+    <div class="panel">
+      <h3>Error de grabado según el texto</h3>
+      <p class="muted" style="font-size:13px">Las fechas con puntos (<code>12.03.2019</code>) son el texto con más errores. Validar el formato antes de pasar a taller ataca la causa principal.</p>
+      <div class="tw"><table id="t-err"></table></div>
+    </div>
+    <div class="panel">
+      <h3>Margen por material</h3>
+      <p class="muted" style="font-size:13px">El baño de oro 18K deja más soles y más margen porcentual. Conviene destacarlo en las campañas.</p>
+      <div class="tw"><table id="t-mat"></table></div>
+      <h3 style="margin-top:8px">Ventas por canal (S/)</h3>
+      <div class="tw"><table id="t-canal"></table></div>
+    </div>
+  </div>
+  <div class="panel">
+    <h3>Tablero semanal propuesto</h3>
+    <div class="tw"><table>
+      <thead><tr><th>Indicador</th><th>Fórmula</th><th class="r">Hoy</th><th class="r">Meta 90 días</th><th>Responsable</th></tr></thead>
+      <tbody id="t-tablero"></tbody>
+    </table></div>
+  </div>
+</section>
+
+<section id="crm">
+  <span class="eyebrow">CRM</span>
+  <h2>Ordenar a los clientes</h2>
+  <p class="ink2">Hoy las consultas llegan por cinco canales y no hay una etapa común. Propongo un embudo único, igual para Instagram, WhatsApp, TikTok, web y tienda. Además, cada cliente recibe un segmento RFM (recencia, frecuencia y monto) que decide qué mensaje se le envía.</p>
+  <div class="panel">
+    <h3>Etapas del embudo</h3>
+    <div class="stages">
+      <span class="stage">Consulta</span><span class="arrow">→</span>
+      <span class="stage">Cotizado</span><span class="arrow">→</span>
+      <span class="stage key">Texto confirmado</span><span class="arrow">→</span>
+      <span class="stage">Pagado</span><span class="arrow">→</span>
+      <span class="stage">En taller</span><span class="arrow">→</span>
+      <span class="stage">Enviado</span><span class="arrow">→</span>
+      <span class="stage">Entregado</span><span class="arrow">→</span>
+      <span class="stage key">Postventa / fecha especial</span>
+    </div>
+    <p class="muted" style="font-size:13px">Las dos etapas resaltadas no existen en la base actual y son las que más valor agregan. "Texto confirmado" evita errores de grabado. "Postventa" convierte la fecha especial del regalo en una nueva venta.</p>
+  </div>
+  <div class="grid2">
+    <div class="panel">
+      <h3>Segmentos de clientes (RFM)</h3>
+      <div class="tw"><table id="t-seg"></table></div>
+      <p class="muted" style="font-size:13px" id="seg-t"></p>
+    </div>
+    <div class="panel">
+      <h3>Conversión de consultas por canal</h3>
+      <div class="tw"><table id="t-emb"></table></div>
+      <p class="muted" style="font-size:13px" id="emb-t"></p>
+    </div>
+  </div>
+  <div class="panel">
+    <h3>Acción por segmento</h3>
+    <div class="tw"><table>
+      <thead><tr><th>Segmento</th><th>Regla</th><th>Acción automática</th></tr></thead>
+      <tbody>
+        <tr><td>Campeones</td><td>Compra reciente y 3+ pedidos</td><td>Acceso anticipado a colecciones; pedir reseña</td></tr>
+        <tr><td>Leales</td><td>2+ pedidos, compra no muy antigua</td><td>Recordatorio de fecha especial 21 días antes</td></tr>
+        <tr><td>Nuevos</td><td>Una compra reciente</td><td>Mensaje de cuidado de la joya a los 7 días; sugerir segunda pieza a los 45</td></tr>
+        <tr><td>En riesgo</td><td>Compraban bien, hace tiempo no compran</td><td>Oferta personal con su texto grabado anterior</td></tr>
+        <tr><td>Dormidos</td><td>Una compra antigua</td><td>Campaña estacional (Navidad, Día de la Madre)</td></tr>
+        <tr><td>Prospectos</td><td>Registrados sin compra</td><td>Seguimiento a las 24 h de su consulta</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section id="automatizacion">
+  <span class="eyebrow">Automatizaciones con n8n</span>
+  <h2>Tres flujos que armé en n8n</h2>
+  <p class="ink2">Elegí las tareas que hoy dependen de que alguien se acuerde. Cada flujo lee y escribe en Google Sheets, que puede ser el CRM inicial, y avisa por WhatsApp. Los tres están en formato JSON de n8n: se importan con <i>Import from file</i> y solo falta conectar las credenciales.</p>
+
+  <div class="flow">
+    <h3>1 · Alerta diaria de pedidos en riesgo</h3>
+    <div class="steps"><span class="step">08:00 diario</span><span class="arrow">→</span><span class="step">Leer pedidos</span><span class="arrow">→</span><span class="step">Calcular llegada estimada</span><span class="arrow">→</span><span class="step">Priorizar</span><span class="arrow">→</span><span class="step">WhatsApp a operaciones</span></div>
+    <div class="why">
+      <div><b>Problema</b><span id="w1-p"></span></div>
+      <div><b>Qué hace</b><span>Para cada pedido en taller estima la llegada (producción + 3 días de envío). Marca prioridad ALTA si llegará después de la fecha especial del cliente.</span></div>
+      <div><b>Indicador</b><span>OTIF y pedidos que llegan después de la fecha especial</span></div>
+    </div>
+    <pre id="w1-demo"></pre>
+  </div>
+
+  <div class="flow">
+    <h3>2 · Nuevo pedido: validar el grabado y confirmar con el cliente</h3>
+    <div class="steps"><span class="step">Webhook del pedido</span><span class="arrow">→</span><span class="step">Validar texto</span><span class="arrow">→</span><span class="step">Fecha prometida realista</span><span class="arrow">→</span><span class="step">¿Válido?</span><span class="arrow">→</span><span class="step">Cliente confirma por WhatsApp</span><span class="arrow">→</span><span class="step">Registrar en CRM</span></div>
+    <div class="why">
+      <div><b>Problema</b><span id="w2-p"></span></div>
+      <div><b>Qué hace</b><span>Revisa largo, caracteres grabables y fechas inexistentes (31.02). Pide al cliente confirmar el texto exacto. Reemplaza la promesa fija de 7 días por producción + envío.</span></div>
+      <div><b>Indicador</b><span>Error de grabado y devoluciones</span></div>
+    </div>
+    <pre>"12.03.2019"     → ok
+"31.02.2020"     → fecha inexistente
+"Mamá ♥"         → caracteres no grabables
+"Siempre juntos" → ok</pre>
+  </div>
+
+  <div class="flow">
+    <h3>3 · Recompra por fecha especial</h3>
+    <div class="steps"><span class="step">10:00 diario</span><span class="arrow">→</span><span class="step">Leer CRM</span><span class="arrow">→</span><span class="step">Fechas que se cumplen en 21 días</span><span class="arrow">→</span><span class="step">Mensaje personalizado</span><span class="arrow">→</span><span class="step">Marcar contacto</span></div>
+    <div class="why">
+      <div><b>Problema</b><span id="w3-p"></span></div>
+      <div><b>Qué hace</b><span>Cuando falta poco para que se cumpla un año de la fecha especial (cumpleaños, aniversario, nacimiento), escribe al cliente con tiempo suficiente para producir y entregar.</span></div>
+      <div><b>Indicador</b><span>% de clientes con 2+ compras y ventas de campaña</span></div>
+    </div>
+  </div>
+  <p class="note">Siguiente paso con IA: clasificar automáticamente cada mensaje entrante (precio, personalización, plazo, estado, reclamo) con un modelo de lenguaje dentro de n8n. Así la consulta entra al CRM con su tipo y el reclamo llega primero a quien corresponde.</p>
+</section>
+
+<section id="keyuser">
+  <span class="eyebrow">Key User</span>
+  <h2>Cómo apoyaría en la implementación del ERP</h2>
+  <p class="ink2">Un Key User es el puente entre el equipo que usa el sistema y el proveedor que lo implementa. Conoce el proceso, prueba cada función con casos reales y enseña a sus compañeros. Este análisis ya me dio esa base: sé cómo fluye un pedido, qué datos faltan (texto confirmado, fecha especial) y qué reglas debe cumplir el ERP. Este sería mi plan para los primeros 90 días.</p>
+  <div class="plan">
+    <div><span class="d">Días 1–30</span><h3>Ordenar</h3><ul><li>Mapa de procesos: consulta → pedido → taller → envío</li><li>Diccionario de datos y limpieza de la base de clientes</li><li>Tablero semanal en Power BI o Looker Studio</li></ul></div>
+    <div><span class="d">Días 31–60</span><h3>Automatizar</h3><ul><li>Poner en marcha los tres flujos de n8n</li><li>Etapas del embudo en el CRM</li><li>Medir la línea base de OTIF y del error de grabado</li></ul></div>
+    <div><span class="d">Días 61–90</span><h3>Preparar el ERP</h3><ul><li>Requisitos y casos de prueba (UAT) por proceso</li><li>Migración de maestros: productos, clientes y precios</li><li>Manual corto y capacitación al equipo</li></ul></div>
+  </div>
+</section>
+
+<section id="metodo">
+  <span class="eyebrow">Cómo lo hice</span>
+  <h2>Revisión de datos y archivos</h2>
+  <div class="grid2">
+    <div class="panel">
+      <h3>Control de calidad de datos</h3>
+      <div class="tw"><table id="t-cal"></table></div>
+      <p class="muted" style="font-size:13px">Antes de calcular revisé la integridad de la base: llaves entre hojas, totales y duplicados. Los nombres repetidos tienen teléfonos distintos, así que son personas diferentes y el teléfono es la llave confiable para el CRM.</p>
+    </div>
+    <div class="panel files">
+      <h3>Archivos del proyecto</h3>
+      <ul>
+        <li><code>analisis_joyeria.py</code>: calcula todos los indicadores y genera <code>metricas.json</code></li>
+        <li><code>crm_clientes.csv</code>: 600 clientes con su segmento RFM y su última fecha especial</li>
+        <li><code>n8n/1_alerta_pedidos_riesgo.json</code></li>
+        <li><code>n8n/2_validar_grabado_nuevo_pedido.json</code></li>
+        <li><code>n8n/3_recompra_fecha_especial.json</code></li>
+      </ul>
+      <h3>Definiciones</h3>
+      <ul>
+        <li><b>Venta neta:</b> pedidos entregados o en producción, después del descuento</li>
+        <li><b>OTIF:</b> entregados con fecha de entrega menor o igual a la prometida</li>
+        <li><b>RFM:</b> recencia en cuartiles, frecuencia de 1 a 4+ y monto en cuartiles</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>Yosseline · Estudiante de Ingeniería de Sistemas, 6.º ciclo · Universidad César Vallejo</span>
+  <span>Caso de práctica con datos simulados. No representa cifras de ninguna empresa real.</span>
+</footer>
+</div>
+
+<script>
+const D = {"calidad": {"clientes": 600, "productos": 20, "pedidos": 800, "consultas": 1500, "pedidos_sin_cliente_valido": 0, "pedidos_sin_producto_valido": 0, "totales_que_no_cuadran": 0, "nombres_repetidos_distinto_telefono": 286, "telefonos_duplicados": 0}, "kpis": {"ventas_netas": 166890.35, "margen_bruto": 104376.35, "margen_pct": 62.5, "pedidos_validos": 704, "ticket_promedio": 237.06, "clientes_compradores": 400, "tasa_cancelacion_pct": 8.5, "tasa_devolucion_pct": 3.5, "otif_pct": 42.9, "error_grabado_pct": 5.4, "ventas_perdidas": 22753.15, "dias_produccion_prom": 5.6, "descuento_otorgado": 8177.65}, "mensual": [{"mes": "2025-10", "ventas": 7873.05, "pedidos": 29, "margen": 5045.05, "otif": 37.9}, {"mes": "2025-11", "ventas": 8644.7, "pedidos": 37, "margen": 5333.7, "otif": 29.7}, {"mes": "2025-12", "ventas": 24906.0, "pedidos": 103, "margen": 15551.0, "otif": 43.7}, {"mes": "2026-01", "ventas": 10164.55, "pedidos": 41, "margen": 6435.55, "otif": 41.5}, {"mes": "2026-02", "ventas": 18876.65, "pedidos": 77, "margen": 11900.65, "otif": 46.8}, {"mes": "2026-03", "ventas": 12648.55, "pedidos": 52, "margen": 7859.55, "otif": 51.9}, {"mes": "2026-04", "ventas": 12020.55, "pedidos": 53, "margen": 7590.55, "otif": 47.2}, {"mes": "2026-05", "ventas": 25862.4, "pedidos": 112, "margen": 16143.4, "otif": 42.9}, {"mes": "2026-06", "ventas": 9841.7, "pedidos": 45, "margen": 6215.7, "otif": 44.4}, {"mes": "2026-07", "ventas": 15058.6, "pedidos": 61, "margen": 9368.6, "otif": 36.1}, {"mes": "2026-08", "ventas": 13094.8, "pedidos": 59, "margen": 8118.8, "otif": 39.0}, {"mes": "2026-09", "ventas": 7898.8, "pedidos": 35, "margen": 4813.8, "otif": 48.5}], "por_producto": [{"producto": "Collar mamá con nombres de hijos", "ventas": 22253.6, "unidades": 84, "margen": 13286.6}, {"producto": "Collar con nombre", "ventas": 19893.15, "unidades": 96, "margen": 12720.15}, {"producto": "Anillos de pareja (par)", "ventas": 19077.25, "unidades": 62, "margen": 11953.25}, {"producto": "Medalla de bautizo", "ventas": 18415.5, "unidades": 86, "margen": 11535.5}, {"producto": "Dije de huellita", "ventas": 18152.25, "unidades": 93, "margen": 11804.25}, {"producto": "Collar con inicial", "ventas": 16836.65, "unidades": 100, "margen": 10764.65}, {"producto": "Anillo grabado", "ventas": 14821.65, "unidades": 80, "margen": 8831.65}, {"producto": "Pulsera con fecha", "ventas": 13592.85, "unidades": 81, "margen": 8684.85}, {"producto": "Pulsera con iniciales", "ventas": 12193.6, "unidades": 76, "margen": 7557.6}, {"producto": "Aretes personalizados", "ventas": 11653.85, "unidades": 79, "margen": 7237.85}], "por_material": [{"material": "Baño oro 18K", "ventas": 91194.9, "margen": 57983.9, "margen_pct": 63.6}, {"material": "Plata 925", "ventas": 75695.45, "margen": 46392.45, "margen_pct": 61.3}], "por_canal_venta": {"Instagram": 58049.25, "WhatsApp": 52101.2, "Web": 23357.35, "Tienda": 19296.8, "TikTok": 14085.75}, "motivos": {"Cumpleaños": 23039.35, "Regalo para mí": 21606.0, "Navidad": 21455.2, "Día de la Madre": 21024.0, "Aniversario": 20917.35, "San Valentín": 19799.5, "Nacimiento": 19759.4, "Graduación": 19289.55}, "pago": {"Yape": 331, "Tarjeta": 159, "Transferencia": 110, "Plin": 104}, "causa": {"devolucion_con_error_pct": 4.7, "devolucion_sin_error_pct": 3.4, "cancelacion_con_error_pct": 4.7, "cancelacion_sin_error_pct": 8.7, "otif_por_dias_produccion": {"2": 100.0, "3": 100.0, "4": 81.8, "5": 46.3, "6": 21.1, "7": 0.0, "8": 0.0, "9": 0.0, "10": 0.0, "11": 0.0, "13": 0.0}, "pedidos_por_dias_produccion": {"2": 94, "3": 90, "4": 66, "5": 95, "6": 90, "7": 78, "8": 75, "9": 100, "10": 7, "11": 5, "13": 2}, "envio_dias_prom": 2.5, "entregas_tarde": 401, "retraso_prom_dias": 3.1, "con_fecha_especial": 265, "llegaron_despues_fecha_especial": 28, "error_por_texto": {"12.03.2019": 8.6, "Eterno": 7.8, "Luna": 6.4, "Mamá": 5.6, "Valeria": 5.2, "A.L.": 4.8, "M & J": 4.1, "Siempre juntos": 3.4, "Thiago": 3.3}}, "embudo": {"consultas": 1500, "convertidas": 573, "conversion_pct": 38.2, "mediana_min_respuesta": 45.0, "por_canal": [{"canal": "Instagram", "consultas": 505, "conversion": 39.0, "resp_mediana": 45.0}, {"canal": "WhatsApp", "consultas": 497, "conversion": 38.0, "resp_mediana": 45.0}, {"canal": "Web", "consultas": 226, "conversion": 40.3, "resp_mediana": 45.0}, {"canal": "Tienda", "consultas": 168, "conversion": 35.1, "resp_mediana": 45.0}, {"canal": "TikTok", "consultas": 104, "conversion": 35.6, "resp_mediana": 45.0}], "por_tipo": [{"tipo_consulta": "Precio", "consultas": 589, "conversion": 37.4}, {"tipo_consulta": "Personalización", "consultas": 386, "conversion": 39.4}, {"tipo_consulta": "Tiempo de entrega", "consultas": 279, "conversion": 35.8}, {"tipo_consulta": "Estado de pedido", "consultas": 177, "conversion": 39.5}, {"tipo_consulta": "Reclamo", "consultas": 69, "conversion": 44.9}], "por_tiempo_respuesta": [{"tramo_resp": "≤15 min", "consultas": 510, "conversion": 37.3}, {"tramo_resp": "16–60 min", "consultas": 498, "conversion": 37.3}, {"tramo_resp": "1–4 h", "consultas": 331, "conversion": 40.5}, {"tramo_resp": "> 4 h", "consultas": 161, "conversion": 39.1}], "consultas_sin_respuesta_1h_pct": 32.8}, "segmentos": [{"segmento": "Leales", "clientes": 118, "monto": 62120.15, "frecuencia": 2.19, "pct_ventas": 37.2}, {"segmento": "Campeones", "clientes": 48, "monto": 36812.9, "frecuencia": 3.31, "pct_ventas": 22.1}, {"segmento": "En riesgo", "clientes": 53, "monto": 28866.4, "frecuencia": 1.98, "pct_ventas": 17.3}, {"segmento": "Dormidos", "clientes": 101, "monto": 21243.85, "frecuencia": 1.0, "pct_ventas": 12.7}, {"segmento": "Nuevos", "clientes": 80, "monto": 17847.05, "frecuencia": 1.0, "pct_ventas": 10.7}, {"segmento": "Prospecto (sin compra)", "clientes": 200, "monto": 0.0, "frecuencia": 0.0, "pct_ventas": 0.0}], "recompra": {"clientes_con_2mas_pct": 50.7, "ventas_de_recurrentes_pct": 72.2, "registrados_sin_compra": 200}, "origen": [{"canal_origen": "Instagram", "clientes": 210, "compradores": 145, "monto": 58992.1, "valor_por_cliente": 280.91}, {"canal_origen": "Tienda", "clientes": 68, "compradores": 46, "monto": 19793.95, "valor_por_cliente": 291.09}, {"canal_origen": "TikTok", "clientes": 47, "compradores": 30, "monto": 14810.1, "valor_por_cliente": 315.11}, {"canal_origen": "Web", "clientes": 96, "compradores": 63, "monto": 26544.25, "valor_por_cliente": 276.5}, {"canal_origen": "WhatsApp", "clientes": 179, "compradores": 116, "monto": 46749.95, "valor_por_cliente": 261.17}], "abiertos": [{"id_pedido": "PED0295", "id_cliente": "C0047", "producto": "Collar con inicial", "fecha_pedido": "2026-09-18", "fecha_prometida": "2026-09-25", "dias_produccion": "9", "fecha_especial": null}, {"id_pedido": "PED0244", "id_cliente": "C0079", "producto": "Anillo grabado", "fecha_pedido": "2026-09-20", "fecha_prometida": "2026-09-27", "dias_produccion": "9", "fecha_especial": null}], "periodo": ["2025-10-11", "2026-09-22"]};
+const $ = id => document.getElementById(id);
+const S = n => 'S/ ' + Number(n).toLocaleString('es-PE',{maximumFractionDigits:0});
+const P = n => Number(n).toLocaleString('es-PE',{maximumFractionDigits:1}) + ' %';
+const k = D.kpis, c = D.causa, e = D.embudo, r = D.recompra;
+
+$('periodo').textContent = 'oct 2025 – sep 2026';
+const kp = [['Ventas netas',S(k.ventas_netas)],['Margen bruto',P(k.margen_pct)],['Ticket promedio',S(k.ticket_promedio)],
+  ['Pedidos válidos',k.pedidos_validos],['Conversión de consultas',P(e.conversion_pct)],['Cancelación + devolución',P(k.tasa_cancelacion_pct+k.tasa_devolucion_pct)]];
+$('kpis').innerHTML = kp.map(([l,v])=>`<div class="kpi"><span class="v">${v}</span><span class="l">${l}</span></div>`).join('');
+
+$('f-otif').textContent = P(k.otif_pct);
+$('f-otif-t').textContent = `La promesa es siempre 7 días, pero el taller tarda ${String(k.dias_produccion_prom).replace('.',',')} días en promedio y el envío ${String(c.envio_dias_prom).replace('.',',')} más. ${c.entregas_tarde} entregas llegaron tarde, con ${String(c.retraso_prom_dias).replace('.',',')} días de retraso promedio, y ${c.llegaron_despues_fecha_especial} regalos llegaron después de la fecha especial.`;
+$('f-rec').textContent = P(r.ventas_de_recurrentes_pct);
+$('f-rec-t').textContent = `La mitad de los compradores (${P(r.clientes_con_2mas_pct)}) ya compró dos veces o más, y ${r.registrados_sin_compra} personas registradas nunca compraron. La fecha especial de cada pedido es el mejor motivo para volver a escribirles.`;
+$('f-err').textContent = P(k.error_grabado_pct);
+$('f-err-t').textContent = `Cancelaciones y devoluciones suman ${S(k.ventas_perdidas)} en ventas perdidas. Validar el texto y pedir confirmación al cliente antes de grabar elimina la causa más fácil de evitar.`;
+
+// --- charts
+function tipper(el){const t=document.createElement('div');t.className='tip';t.hidden=true;el.appendChild(t);
+  return {show(x,y,h){t.innerHTML=h;t.style.left=x+'px';t.style.top=y+'px';t.hidden=false},hide(){t.hidden=true}}}
+function bars(el, data, {fmt, color, labelEvery=1, ymax, ticks}){
+  const W=440,H=220,m={t:16,r:8,b:28,l:44},iw=W-m.l-m.r,ih=H-m.t-m.b;
+  const mx=ymax||Math.max(...data.map(d=>d.v))*1.1, bw=iw/data.length, g=2;
+  const y=v=>m.t+ih-v/mx*ih;
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img">`;
+  (ticks||[0,mx/2,mx]).forEach(v=>{s+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${m.l-6}" y="${y(v)+4}" text-anchor="end">${fmt.axis(v)}</text>`});
+  data.forEach((d,i)=>{const x=m.l+i*bw+g/2,w=Math.max(1,bw-g-4),h=ih-(y(d.v)-m.t),yy=y(d.v);
+    const col=typeof color==='function'?color(d):color, r=Math.min(4,w/2,h);
+    s+=`<path class="m" data-i="${i}" fill="${col}" d="M${x+2},${m.t+ih} V${yy+r} q0,-${r} ${r},-${r} H${x+2+w-r} q${r},0 ${r},${r} V${m.t+ih} Z"/>`;
+    s+=`<rect data-i="${i}" x="${m.l+i*bw}" y="${m.t}" width="${bw}" height="${ih}" fill="transparent"/>`;
+    if(i%labelEvery===0) s+=`<text x="${x+2+w/2}" y="${H-10}" text-anchor="middle">${d.k}</text>`;});
+  s+=`<line x1="${m.l}" x2="${W-m.r}" y1="${m.t+ih}" y2="${m.t+ih}" stroke="var(--muted)"/></svg>`;
+  el.innerHTML=s; const tp=tipper(el), svg=el.querySelector('svg');
+  svg.querySelectorAll('rect[data-i]').forEach(rc=>{const i=+rc.dataset.i;
+    const mv=ev=>{const b=el.getBoundingClientRect(),sb=svg.getBoundingClientRect(),sc=sb.width/W;
+      tp.show((m.l+i*bw+bw/2)*sc,(y(data[i].v))*sc,data[i].tip);
+      svg.querySelectorAll('path.m').forEach(p=>p.style.opacity=p.dataset.i==i?1:.45)};
+    rc.addEventListener('mouseenter',mv);rc.addEventListener('mouseleave',()=>{tp.hide();svg.querySelectorAll('path.m').forEach(p=>p.style.opacity=1)})});
+}
+const mesN=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+bars($('ch-ventas'), D.mensual.map(d=>{const [yy,mm]=d.mes.split('-');return {k:mesN[mm-1],v:d.ventas,
+  tip:`<b>${mesN[mm-1]} ${yy}</b><br>${S(d.ventas)} · ${d.pedidos} pedidos<br>A tiempo: ${P(d.otif)}`}}),
+  {fmt:{axis:v=>v?(v/1000).toFixed(0)+'k':'0'},color:'var(--gold)',ticks:[0,10000,20000,30000],ymax:30000});
+const od=Object.entries(c.otif_por_dias_produccion).map(([dd,v])=>({k:dd,v,n:c.pedidos_por_dias_produccion[dd]}));
+bars($('ch-otif'), od.map(d=>({k:d.k+' d',v:d.v,tip:`<b>${d.k} días de taller</b><br>${P(d.v)} a tiempo · ${d.n} pedidos`})),
+  {fmt:{axis:v=>v+'%'},color:d=>d.v>=80?'var(--good)':d.v>=40?'var(--warn)':'var(--bad)',ymax:100,ticks:[0,50,100]});
+$('otif-dias-t').textContent = `Con 4 días de taller o menos casi todo llega a tiempo. Desde 7 días, nada llega a tiempo. La promesa debe depender de la carga del taller, no ser fija.`;
+
+// --- tables
+const tbl=(id,head,rows)=>{$(id).innerHTML=`<thead><tr>${head.map(h=>`<th class="${h[1]||''}">${h[0]}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map((v,i)=>`<td class="${head[i][1]||''}">${v}</td>`).join('')}</tr>`).join('')}</tbody>`};
+const errMax=Math.max(...Object.values(c.error_por_texto));
+tbl('t-err',[['Texto grabado'],['Error','r']],Object.entries(c.error_por_texto).map(([t,v])=>[`<code>${t}</code>`,`${P(v)}<span class="bar-inline" style="width:${v/errMax*60}px"></span>`]));
+tbl('t-mat',[['Material'],['Ventas','r'],['Margen','r']],D.por_material.map(m=>[m.material,S(m.ventas),P(m.margen_pct)]));
+const cMax=Math.max(...Object.values(D.por_canal_venta));
+tbl('t-canal',[['Canal'],['Ventas','r']],Object.entries(D.por_canal_venta).map(([k2,v])=>[k2,`${S(v)}<span class="bar-inline" style="width:${v/cMax*60}px"></span>`]));
+tbl('t-seg',[['Segmento'],['Clientes','r'],['Ventas','r'],['% ventas','r']],D.segmentos.map(s=>[s.segmento,s.clientes,S(s.monto),P(s.pct_ventas)]));
+const camp=D.segmentos.find(s=>s.segmento==='Campeones'), leal=D.segmentos.find(s=>s.segmento==='Leales');
+$('seg-t').textContent=`Campeones y Leales son ${camp.clientes+leal.clientes} clientes y generan el ${P(camp.pct_ventas+leal.pct_ventas)} de las ventas. Los ${D.segmentos.find(s=>s.segmento==='En riesgo').clientes} clientes En riesgo son la reactivación más rentable.`;
+tbl('t-emb',[['Canal'],['Consultas','r'],['Conversión','r']],e.por_canal.map(x=>[x.canal,x.consultas,P(x.conversion)]));
+const tr=e.por_tiempo_respuesta;
+$('emb-t').textContent=`Algo que no esperaba: en estos datos, responder rápido no sube la conversión (${P(tr[0].conversion)} con respuesta en 15 minutos o menos y ${P(tr[3].conversion)} después de 4 horas). Por eso no propongo un chatbot de respuesta inmediata como primera prioridad. El dinero está en cumplir la entrega y en la recompra.`;
+tbl('t-cal',[['Control'],['Resultado','r']],[
+  ['Pedidos con cliente inexistente',D.calidad.pedidos_sin_cliente_valido],['Pedidos con producto inexistente',D.calidad.pedidos_sin_producto_valido],
+  ['Totales que no cuadran (cant × precio − desc.)',D.calidad.totales_que_no_cuadran],['Teléfonos duplicados',D.calidad.telefonos_duplicados],
+  ['Nombres repetidos con distinto teléfono',D.calidad.nombres_repetidos_distinto_telefono]]);
+$('t-tablero').innerHTML=[
+  ['Ventas netas y margen','Σ total − costo, pedidos válidos',P(k.margen_pct),'≥ 62 %','Comercial'],
+  ['OTIF','entregados a tiempo ÷ entregados',P(k.otif_pct),'≥ 85 %','Operaciones'],
+  ['Regalos tarde','entregas después de la fecha especial',c.llegaron_despues_fecha_especial+' / '+c.con_fecha_especial,'0','Operaciones'],
+  ['Error de grabado','pedidos con error ÷ pedidos',P(k.error_grabado_pct),'≤ 2 %','Taller'],
+  ['Conversión de consultas','consultas que compran ÷ consultas',P(e.conversion_pct),'≥ 42 %','Ventas'],
+  ['Recompra','clientes con 2+ pedidos ÷ compradores',P(r.clientes_con_2mas_pct),'≥ 55 %','CRM'],
+].map(r=>`<tr><td>${r[0]}</td><td class="muted">${r[1]}</td><td class="r">${r[2]}</td><td class="r">${r[3]}</td><td>${r[4]}</td></tr>`).join('');
+
+$('w1-p').textContent=`${c.entregas_tarde} de ${k.pedidos_validos-2} entregas llegaron tarde y nadie lo supo hasta que el cliente preguntó.`;
+$('w2-p').textContent=`El ${P(k.error_grabado_pct)} de los grabados tuvo error. La promesa fija de 7 días no considera la carga del taller.`;
+$('w3-p').textContent=`${c.con_fecha_especial} pedidos tienen una fecha especial registrada que nunca se vuelve a usar.`;
+$('w1-demo').textContent=`Prueba con un pedido real de la base (PED0295, prometido para el 25-sep):
+🚨 1 pedido(s) en riesgo hoy
+• MEDIA | PED0295 Collar con inicial – llega 2026-10-23 (+28 d)
+Acción: priorizar en taller o avisar al cliente antes de que pregunte.`;
+</script>
+
+</html>
